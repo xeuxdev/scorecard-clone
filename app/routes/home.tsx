@@ -23,7 +23,7 @@ export function meta({}: Route.MetaArgs) {
     {
       property: "og:description",
       content:
-        "Looking for a simple way to build and test LLM apps? Use Scorecard to deliver predictable AI experiences that improve with every update.",
+        "Encrypt everything. Compute anything. Deploy today with Confidential Computing.",
     },
     {
       property: "og:image",
@@ -34,7 +34,7 @@ export function meta({}: Route.MetaArgs) {
     {
       property: "twitter:description",
       content:
-        "Looking for a simple way to build and test LLM apps? Use Scorecard to deliver predictable AI experiences that improve with every update.",
+        "Encrypt everything. Compute anything. Deploy today with Confidential Computing.",
     },
     {
       property: "twitter:image",
