@@ -8,14 +8,15 @@ export default function HomeBlackBox() {
               <div fade-in="" className="home-blackbox_content">
                 <div className="home-blackbox_content-block">
                   <h2 className="home-blackbox_text heading-style-h3">
-                    Opening the Black Box of AI Behavior
+                    Trustless, verifiable, and performant.
                   </h2>
                 </div>
                 <div className="home-blackbox_content-block">
                   <p className="home-blackbox_text text-size-medium">
-                    AI can be unpredictable. Scorecard shows you how your models
-                    behave, with continuous evaluation as you build. Catch
-                    problems early, fix them fast, and ship AI agents that work.
+                    Arcium is a global supercomputer for a new internet,
+                    providing developers, applications and entire industries
+                    with a trustless, verifiable, and efficient framework to run
+                    encrypted computations.
                   </p>
                 </div>
               </div>

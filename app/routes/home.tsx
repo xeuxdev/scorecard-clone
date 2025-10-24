@@ -56,7 +56,7 @@ export default function Home() {
         <HomeBlackBox />
         <ProblemSection />
         <SolutionSection />
-        <CTASection />
+        {/* <CTASection /> */}
         <MethodSection />
         <ControlSection />
       </main>

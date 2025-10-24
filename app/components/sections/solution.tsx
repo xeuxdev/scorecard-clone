@@ -20,11 +20,11 @@ export function SolutionSection() {
                         2
                       </div>
                       <div className="section-heading-main_eyebrow_text">
-                        The solution
+                        THE OPPORTUNITY
                       </div>
                     </div>
                     <h2 className="section-heading-main_text heading-style-h3">
-                      Enter the AI Control Room with Scorecard
+                      Decentralize Computing Power with Arcium
                     </h2>
                   </div>
                   <div
@@ -32,10 +32,10 @@ export function SolutionSection() {
                     className="section-heading-main_content text-wrap-balance"
                   >
                     <p className="section-heading-main_text text-size-medium">
-                      Scorecard helps you make sense of AI performance. With
-                      tools to test and evaluate AI agents, map out real
-                      scenarios and bring clarity to AI performance. Gain
-                      insights, identify risks early, and ship with confidence.
+                      Instead of monopolies and centralized entities controlling
+                      and processing data, Arcium enables anyone to contribute
+                      computing power. Choose your role and become part of the
+                      distributed future.
                     </p>
                   </div>
                 </div>
@@ -50,12 +50,11 @@ export function SolutionSection() {
                 <div className="info-card">
                   <div className="info-card_content">
                     <h3 className="info-card_text subtitle-size-1">
-                      Gain Live Observability
+                      Run a Node
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Get a pulse on how your users interact with the AGENT in
-                      real time with continuous evaluation. Identify issues,
-                      monitor failures, and find opportunities to improve.
+                      Run arxOS to become a 'core' of Arcium's computing power
+                      to unlock the internet's full potential.
                     </p>
                   </div>
                   <div className="info-card_visuals">
@@ -79,12 +78,11 @@ export function SolutionSection() {
                 <div className="info-card">
                   <div className="info-card_content">
                     <h3 className="info-card_text subtitle-size-1">
-                      Version and Store Your Best Prompts
+                      Build Applications
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Create, test, and track your best-performing prompts all
-                      in one place. Keep a history of what works and give your
-                      team access to a single source of truth.
+                      Utilize MXEs to build new applications or integrate them
+                      with existing ones to empower your users at scale.
                     </p>
                   </div>
                   <div className="info-card_visuals">
@@ -108,12 +106,11 @@ export function SolutionSection() {
                 <div className="info-card">
                   <div className="info-card_content">
                     <h3 className="info-card_text subtitle-size-1">
-                      Create Trustworthy Metrics
+                      Stake and Secure
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Start with Scorecard’s validated metric library to access
-                      industry benchmarks. Customize proven metrics or create
-                      your own to track what matters most to your business.
+                      Stake Arcium tokens to secure the network and contribute
+                      to the development of the systems.
                     </p>
                   </div>
                   <div className="info-card_visuals">
@@ -137,12 +134,11 @@ export function SolutionSection() {
                 <div className="info-card">
                   <div className="info-card_content">
                     <h3 className="info-card_text subtitle-size-1">
-                      Validate Your Performance
+                      Engage and Expand
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Run structured tests that provide clear, actionable
-                      insights, so you can be confident in performance before
-                      going live.
+                      Learn, engage, and shape the pioneering community solving
+                      one of the internet's biggest challenges.
                     </p>
                   </div>
                   <div className="info-card_visuals">

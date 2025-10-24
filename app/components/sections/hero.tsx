@@ -172,48 +172,44 @@ export function HeroSection() {
                 className="section-heading-main_content is-home-hero"
               >
                 <h1 className="section-heading-main_text heading-style-h1">
-                  <span className="data-highlight active">Evaluate</span>,{" "}
-                  <span className="data-highlight">Optimize</span>, and{" "}
-                  <span className="data-highlight">Ship </span>
-                  Enterprise AI Agents
+                  <span className="data-highlight active">Encrypt,</span>{" "}
+                  <span className="data-highlight">Compute</span>, and{" "}
+                  <span className="data-highlight">Deploy </span> today with
+                  Confidential Computing.
                 </h1>
               </div>
               <div className="home-hero_button-wrapper">
                 <div className="home-hero_button-wrap">
                   <a
                     role="button"
-                    aria-label="book a demo"
-                    data-wf-native-id-path="73171c2c-15a8-f122-56fd-6e0d8936604f:efc7c909-95d3-68f4-c42c-b60d5912df26"
-                    data-wf-ao-click-engagement-tracking="true"
-                    data-wf-element-id="efc7c909-95d3-68f4-c42c-b60d5912df26"
-                    data-wf-component-context="%5B%7B%22componentId%22%3A%22efc7c909-95d3-68f4-c42c-b60d5912df26%22%2C%22instanceId%22%3A%2273171c2c-15a8-f122-56fd-6e0d8936604f%22%7D%5D"
-                    href="/book-a-demo"
+                    aria-label="Explore testnet"
+                    href=""
                     className="button-secondary w-inline-block"
                   >
                     <span className="button-secondary_bg"></span>
                     <span
-                      data-text="book a demo"
+                      data-text="Explore testnet"
                       className="button-secondary_inner"
                     >
-                      <span className="button-secondary_text">book a demo</span>
+                      <span className="button-secondary_text">
+                        Explore testnet
+                      </span>
                     </span>
                   </a>
                 </div>
                 <div className="home-hero_button-wrap">
                   <a
                     className="button-primary w-inline-block"
-                    data-wf-component-context="%5B%7B%22componentId%22%3A%22b4d05707-5080-4fcb-8c01-6a13b4c7bf00%22%2C%22instanceId%22%3A%2273171c2c-15a8-f122-56fd-6e0d89366052%22%7D%5D"
-                    data-wf-element-id="b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                    data-wf-event-ids="157055388"
-                    href="https://app.getscorecard.ai/"
-                    aria-label="login"
+                    href=""
+                    aria-label="read our docs"
                     role="button"
-                    data-wf-native-id-path="73171c2c-15a8-f122-56fd-6e0d89366052:b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                    data-wf-ao-click-engagement-tracking="true"
                   >
                     <span className="button-primary_bg"></span>
-                    <span data-text="login" className="button-primary_inner">
-                      <span className="button-primary_text">login</span>
+                    <span
+                      data-text="read our docs"
+                      className="button-primary_inner"
+                    >
+                      <span className="button-primary_text">read our docs</span>
                       <span className="button-primary_icon-wrap">
                         <span
                           style={
@@ -312,42 +308,33 @@ export function HeroSection() {
                       tab-target-1=""
                       data-tabs="content-item"
                       role="tab"
-                      data-wf-native-id-path="07d1b63d-27bc-ce46-793e-e29656d6b975"
-                      data-wf-ao-click-engagement-tracking="true"
-                      data-wf-element-id="07d1b63d-27bc-ce46-793e-e29656d6b975"
                       href="#"
                       className="tab-content__item w-inline-block"
                     >
                       <div className="tab-content__item-main">
-                        <h2 className="content-item__heading">Evaluate</h2>
+                        <h2 className="content-item__heading">ai</h2>
                       </div>
                     </a>
                     <a
                       tab-target-2=""
                       data-tabs="content-item"
                       role="tab"
-                      data-wf-native-id-path="bf211d0b-5fd0-bf72-b022-ccb4c76b5e18"
-                      data-wf-ao-click-engagement-tracking="true"
-                      data-wf-element-id="bf211d0b-5fd0-bf72-b022-ccb4c76b5e18"
                       href="#"
                       className="tab-content__item w-inline-block"
                     >
                       <div className="tab-content__item-main">
-                        <h2 className="content-item__heading">OPTIMIZE</h2>
+                        <h2 className="content-item__heading">blockchain</h2>
                       </div>
                     </a>
                     <a
                       tab-target-3=""
                       data-tabs="content-item"
                       role="tab"
-                      data-wf-native-id-path="8bcfa200-3b36-ff29-dc2d-550e2ab9bd97"
-                      data-wf-ao-click-engagement-tracking="true"
-                      data-wf-element-id="8bcfa200-3b36-ff29-dc2d-550e2ab9bd97"
                       href="#"
                       className="tab-content__item w-inline-block"
                     >
                       <div className="tab-content__item-main">
-                        <h2 className="content-item__heading">Ship</h2>
+                        <h2 className="content-item__heading">DePIN</h2>
                       </div>
                     </a>
                   </div>
@@ -367,44 +354,9 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Test the performance of your Agent against vetted
-                            metrics your whole team trusts
-                          </div>
-                          <div className="tab-visual__content_arrows">
-                            <button
-                              tab-link-3=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg is-flipped"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              tab-link-2=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
+                            Arcium enables AI models to train on encrypted data,
+                            expanding diversity while preserving integrity and
+                            privacy.
                           </div>
                         </div>
                         <div className="tab-visual__image-wrapper">
@@ -438,44 +390,9 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Create experiments and quickly test your best ideas
-                            in a powerful AI laboratory
-                          </div>
-                          <div className="tab-visual__content_arrows">
-                            <button
-                              tab-link-1=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg is-flipped"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              tab-link-3=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
+                            Arcium provides critical confidentiality for
+                            transparent blockchains, ensuring DeFi applications
+                            and use cases operate securely with protection.
                           </div>
                         </div>
                         <div className="tab-visual__image-wrapper">
@@ -509,45 +426,9 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Manage and deploy agents to production without
-                            touching an IDE. Identify &amp;address real world
-                            usage issues
-                          </div>
-                          <div className="tab-visual__content_arrows">
-                            <button
-                              tab-link-2=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg is-flipped"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              tab-link-1=""
-                              className="tab-visual__content_arrow"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="100%"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                className="tab-visual__content_arrow-svg"
-                              >
-                                <path
-                                  d="M4.27738 11.0924C4.63275 10.7145 5.22761 10.696 5.60551 11.0514C5.98339 11.4067 6.0019 12.0016 5.64652 12.3795L5.62406 12.4029C5.26868 12.7808 4.67382 12.7993 4.29593 12.4439C3.91805 12.0886 3.89954 11.4937 4.25492 11.1158L4.27738 11.0924ZM6.59965 8.63046C6.95916 8.31835 7.50415 8.32267 7.85843 8.65585C8.23631 9.01123 8.25385 9.60609 7.89847 9.98397L7.85355 10.0318L7.78422 10.0982C7.4247 10.4104 6.87975 10.4061 6.52543 10.0728C6.14774 9.71744 6.13007 9.12254 6.48539 8.74472L6.53031 8.69686L6.59965 8.63046ZM8.7598 6.28085C9.10458 5.93802 9.64857 5.9176 10.0166 6.21932L10.0879 6.28475L10.1104 6.30722C10.4675 6.66633 10.4758 7.24392 10.1289 7.61288L10.1065 7.63729C9.7511 8.01515 9.15623 8.0327 8.77836 7.67733C8.5777 7.48855 8.47909 7.2325 8.48344 6.97714C8.47533 6.72582 8.56744 6.47214 8.7598 6.28085ZM6.50687 4.01522C6.85182 3.67223 7.39661 3.65247 7.76468 3.95468L7.835 4.01913L7.8809 4.06503L7.94437 4.13632C8.24434 4.50608 8.22187 5.0502 7.87699 5.39315C7.5322 5.73598 6.98821 5.75546 6.62015 5.4537L6.54886 5.38925L6.50297 5.34335L6.43949 5.27206C6.13958 4.90229 6.16201 4.35816 6.50687 4.01522ZM4.27738 1.77304C4.62227 1.43017 5.16617 1.41048 5.53422 1.71249L5.60551 1.77694L5.62797 1.7994L5.69242 1.87069C5.99241 2.24046 5.96895 2.78457 5.62406 3.12753C5.27927 3.47036 4.73529 3.49083 4.36722 3.18905L4.29593 3.12362L4.27347 3.10116L4.20902 3.02987C3.90921 2.66011 3.93255 2.11593 4.27738 1.77304Z"
-                                  fill="#1A1918"
-                                ></path>
-                              </svg>
-                            </button>
+                            Arcium empowers physical infrastructure networks to
+                            unlock sensitive data insights, powering
+                            decentralized economies of tomorrow securely.
                           </div>
                         </div>
                         <div className="tab-visual__image-wrapper">

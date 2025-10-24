@@ -1,5 +1,3 @@
-import React from "react";
-
 export function Navbar() {
   return (
     <div className="nav_fixed">
@@ -182,21 +180,17 @@ export function Navbar() {
                       <div className="nav_menu-button-wrapper">
                         <a
                           role="button"
-                          aria-label="book a demo"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff5a:efc7c909-95d3-68f4-c42c-b60d5912df26"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="efc7c909-95d3-68f4-c42c-b60d5912df26"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%2C%7B%22componentId%22%3A%22efc7c909-95d3-68f4-c42c-b60d5912df26%22%2C%22instanceId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff5a%22%7D%5D"
-                          href="/book-a-demo"
+                          aria-label="Explore testnet"
+                          href=""
                           className="button-secondary w-inline-block"
                         >
                           <span className="button-secondary_bg"></span>
                           <span
-                            data-text="book a demo"
+                            data-text="Explore testnet"
                             className="button-secondary_inner"
                           >
                             <span className="button-secondary_text">
-                              book a demo
+                              Explore testnet
                             </span>
                           </span>
                         </a>
@@ -204,21 +198,18 @@ export function Navbar() {
                       <div className="nav_menu-button-wrapper">
                         <a
                           className="button-primary w-inline-block"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%2C%7B%22componentId%22%3A%22b4d05707-5080-4fcb-8c01-6a13b4c7bf00%22%2C%22instanceId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff5d%22%7D%5D"
-                          data-wf-element-id="b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                          data-wf-event-ids="157055388"
                           href="https://app.getscorecard.ai/"
                           aria-label="login"
                           role="button"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff5d:b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                          data-wf-ao-click-engagement-tracking="true"
                         >
                           <span className="button-primary_bg"></span>
                           <span
                             data-text="login"
                             className="button-primary_inner"
                           >
-                            <span className="button-primary_text">login</span>
+                            <span className="button-primary_text">
+                              read our docs
+                            </span>
                             {/* <span className="button-primary_icon-wrap">
                               <span
                                 style={

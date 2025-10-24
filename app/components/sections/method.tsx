@@ -19,11 +19,11 @@ export function MethodSection() {
                         3
                       </div>
                       <div className="section-heading-main_eyebrow_text">
-                        The Method
+                        Roadmap
                       </div>
                     </div>
                     <h2 className="section-heading-main_text heading-style-h3">
-                      Learn more about how it all comes together
+                      Arcium’s road to building a better internet.
                     </h2>
                   </div>
                   <div
@@ -31,9 +31,9 @@ export function MethodSection() {
                     className="section-heading-main_content text-wrap-balance"
                   >
                     <p className="section-heading-main_text text-size-medium">
-                      Scorecard creates a fast feedback loop for AI agents. You
-                      test smarter, validate the right metrics, and improve your
-                      agents with continuous evaluation
+                      From a privacy application to a global supercomputer for
+                      encryption, Arcium is rooted in many years of research,
+                      testing, and launching encrypted internet technology.
                     </p>
                   </div>
                 </div>

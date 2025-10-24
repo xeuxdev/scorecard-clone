@@ -9,7 +9,7 @@ export function ControlSection() {
             <div className="background-video">
               <div
                 aria-hidden="true"
-                className="background-video-embed w-embed"
+                className="background-video-embed w-embed overflow-hidden"
               >
                 <style>
                   {` .background-video-embed video {
