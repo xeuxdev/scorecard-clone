@@ -34,38 +34,38 @@ export function Navbar() {
                     className="nav_logo"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M11.9876 17.2495C11.9876 17.6442 11.6668 17.9641 11.2711 17.9641H1.71659C1.32083 17.9641 1 17.6442 1 17.2495L1 16.2967C1 15.902 1.32083 15.582 1.71659 15.582L11.2711 15.582C11.6668 15.582 11.9876 15.902 11.9876 16.2966V17.2495Z"
                       fill="currentColor"
                     ></path>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M16.7972 14.1014C17.0771 14.3805 17.5308 14.3805 17.8106 14.1014L22.8776 9.04822C23.1575 8.76914 23.1575 8.31667 22.8776 8.03759L22.202 7.36383C21.9222 7.08475 21.4685 7.08475 21.1886 7.36383L16.1216 12.417C15.8418 12.6961 15.8418 13.1486 16.1216 13.4276L16.7972 14.1014Z"
                       fill="currentColor"
                     ></path>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M16.3315 19.5843C16.0516 19.8634 16.0516 20.3158 16.3315 20.5949L21.3985 25.6481C21.6784 25.9272 22.1321 25.9272 22.4119 25.6481L23.0875 24.9743C23.3674 24.6953 23.3674 24.2428 23.0875 23.9637L18.0205 18.9105C17.7406 18.6314 17.2869 18.6314 17.0071 18.9105L16.3315 19.5843Z"
                       fill="currentColor"
                     ></path>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M14.1528 12.0991C14.5485 12.0991 14.8694 11.7792 14.8694 11.3845V4.71463C14.8694 4.31995 14.5485 4 14.1528 4L13.1973 4C12.8016 4 12.4807 4.31995 12.4807 4.71463V11.3845C12.4807 11.7792 12.8016 12.0991 13.1973 12.0991H14.1528Z"
                       fill="currentColor"
                     ></path>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M13.1973 21.1511C12.8016 21.1511 12.4807 21.471 12.4807 21.8657L12.4807 28.5356C12.4807 28.9302 12.8016 29.2502 13.1973 29.2502H14.1528C14.5485 29.2502 14.8694 28.9302 14.8694 28.5356L14.8694 21.8657C14.8694 21.471 14.5485 21.1511 14.1528 21.1511H13.1973Z"
                       fill="currentColor"
                     ></path>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M11.3599 17.2495C11.6397 16.9704 11.6397 16.5179 11.3599 16.2389L4.49934 9.39705C4.21949 9.11797 4.21949 8.66549 4.49934 8.38641L5.17494 7.71265C5.45478 7.43357 5.9085 7.43357 6.18834 7.71265L14.0623 15.5651C14.7153 16.2163 14.7153 17.2721 14.0623 17.9232L6.18834 25.7757C5.9085 26.0548 5.45478 26.0548 5.17494 25.7757L4.49934 25.1019C4.21949 24.8229 4.21949 24.3704 4.49934 24.0913L11.3599 17.2495Z"
                       fill="currentColor"
                     ></path>
@@ -219,7 +219,7 @@ export function Navbar() {
                             className="button-primary_inner"
                           >
                             <span className="button-primary_text">login</span>
-                            <span className="button-primary_icon-wrap">
+                            {/* <span className="button-primary_icon-wrap">
                               <span
                                 style={
                                   {
@@ -318,7 +318,7 @@ export function Navbar() {
                                   className="button-primary_dot"
                                 ></span>
                               </span>
-                            </span>
+                            </span> */}
                           </span>
                         </a>
                       </div>

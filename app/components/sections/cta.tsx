@@ -28,13 +28,13 @@ export function CTASection() {
                     className="button-primary_inner"
                   >
                     <span className="button-primary_text">Learn More</span>
-                    <span className="button-primary_icon-wrap">
+                    {/* <span className="button-primary_icon-wrap">
                       <span
                         {...({ STYLE: "--index-parent: 1;" } as any)}
                         className="button-primary_icon"
                       >
                         <span
-                          {...({ STYLE: "--index: 2;" } as any)}
+                          {...({ style: "--index: 2;" } as any)}
                           className="button-primary_dot"
                         ></span>
                         <span
@@ -79,7 +79,7 @@ export function CTASection() {
                           className="button-primary_dot"
                         ></span>
                       </span>
-                    </span>
+                    </span> */}
                   </span>
                 </a>
               </div>
