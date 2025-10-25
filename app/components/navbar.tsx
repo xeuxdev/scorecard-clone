@@ -168,14 +168,6 @@ export function Navbar() {
                             </li>
                             <li className="nav_dropdown-item">
                               <a
-                                href="/brand-guide"
-                                className="nav_dropdown-link"
-                              >
-                                Brand Guide
-                              </a>
-                            </li>
-                            <li className="nav_dropdown-item">
-                              <a
                                 href="/whitepaper"
                                 className="nav_dropdown-link"
                               >
