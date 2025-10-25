@@ -59,7 +59,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
           }
         }`}
         </style>
-
         <link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
         <link href="/webclip.png" rel="apple-touch-icon" />
         <link href="https://www.scorecard.io" rel="canonical" />

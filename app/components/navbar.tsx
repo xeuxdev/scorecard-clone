@@ -109,19 +109,7 @@ export function Navbar() {
                           Product
                         </a>
                       </li>
-                      <li className="nav_menu-li">
-                        <a
-                          aria-label="Go to Pricing page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:b06b5191-a38c-aec8-8eb5-20987b06a953"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="b06b5191-a38c-aec8-8eb5-20987b06a953"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
-                          href="/pricing"
-                          className="nav_menu-link"
-                        >
-                          Pricing
-                        </a>
-                      </li>
+
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Resources page"
@@ -137,17 +125,65 @@ export function Navbar() {
                         </a>
                       </li>
                       <li className="nav_menu-li">
-                        <a
-                          aria-label="Go to Blog page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:1c05af1e-4576-f1b4-1f70-d2a84b4d642f"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="1c05af1e-4576-f1b4-1f70-d2a84b4d642f"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
-                          href="/blog"
-                          className="nav_menu-link"
-                        >
-                          Blog
-                        </a>
+                        <div className="nav_dropdown">
+                          <button
+                            className="nav_menu-link nav_dropdown-toggle"
+                            aria-label="Resources"
+                            aria-expanded="false"
+                            onClick={(e) => {
+                              e.currentTarget.nextElementSibling?.classList.toggle(
+                                "nav_dropdown-open"
+                              );
+                              e.currentTarget.setAttribute(
+                                "aria-expanded",
+                                e.currentTarget.getAttribute(
+                                  "aria-expanded"
+                                ) === "false"
+                                  ? "true"
+                                  : "false"
+                              );
+                            }}
+                          >
+                            Resources
+                            <span className="nav_dropdown-icon">▼</span>
+                          </button>
+                          <ul className="nav_dropdown-menu">
+                            <li className="nav_dropdown-item">
+                              <a href="/blog" className="nav_dropdown-link">
+                                Blog
+                              </a>
+                            </li>
+                            <li className="nav_dropdown-item">
+                              <a href="/glossary" className="nav_dropdown-link">
+                                Glossary
+                              </a>
+                            </li>
+                            <li className="nav_dropdown-item">
+                              <a
+                                href="/media-kit"
+                                className="nav_dropdown-link"
+                              >
+                                Media Kit
+                              </a>
+                            </li>
+                            <li className="nav_dropdown-item">
+                              <a
+                                href="/brand-guide"
+                                className="nav_dropdown-link"
+                              >
+                                Brand Guide
+                              </a>
+                            </li>
+                            <li className="nav_dropdown-item">
+                              <a
+                                href="/whitepaper"
+                                className="nav_dropdown-link"
+                              >
+                                Whitepaper
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                       <li className="nav_menu-li">
                         <a
@@ -210,106 +246,6 @@ export function Navbar() {
                             <span className="button-primary_text">
                               read our docs
                             </span>
-                            {/* <span className="button-primary_icon-wrap">
-                              <span
-                                style={
-                                  {
-                                    ["--index-parent" as any]: "1",
-                                  } as React.CSSProperties
-                                }
-                                className="button-primary_icon"
-                              >
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "2",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "1",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "0",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "1",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "2",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                              </span>
-                              <span
-                                style={
-                                  {
-                                    ["--index-parent" as any]: "0",
-                                  } as React.CSSProperties
-                                }
-                                className="button-primary_icon"
-                              >
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "2",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "1",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <div
-                                  style={
-                                    {
-                                      ["--index" as any]: "0",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></div>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "1",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                                <span
-                                  style={
-                                    {
-                                      ["--index" as any]: "2",
-                                    } as React.CSSProperties
-                                  }
-                                  className="button-primary_dot"
-                                ></span>
-                              </span>
-                            </span> */}
                           </span>
                         </a>
                       </div>

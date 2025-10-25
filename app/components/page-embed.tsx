@@ -1,4 +1,14 @@
+import { useEffect, useState } from "react";
+
 export function PageEmbed() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
   return (
     <div className="page-embed w-embed">
       <style>

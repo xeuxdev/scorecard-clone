@@ -1,5 +1,3 @@
-import React from "react";
-
 export function GlobalEmbed() {
   return (
     <div className="global-css w-embed">
