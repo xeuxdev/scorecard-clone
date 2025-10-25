@@ -113,11 +113,7 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Resources page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff56"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="239f1b45-0e10-342d-f1d6-e9d41e1cff56"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
-                          href="https://docs.scorecard.io/docs/documentation/how-to-use-scorecard/quickstart/python"
+                          href="/docs"
                           target="_blank"
                           className="nav_menu-link"
                         >
@@ -167,6 +163,11 @@ export function Navbar() {
                               </a>
                             </li>
                             <li className="nav_dropdown-item">
+                              <a href="/faqs" className="nav_dropdown-link">
+                                FAQs
+                              </a>
+                            </li>
+                            <li className="nav_dropdown-item">
                               <a
                                 href="/whitepaper"
                                 className="nav_dropdown-link"
@@ -180,10 +181,6 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to About Us page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff54"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="239f1b45-0e10-342d-f1d6-e9d41e1cff54"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
                           href="/about-us"
                           className="nav_menu-link"
                         >
@@ -193,10 +190,6 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Careers page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:9305d9f6-b058-e0f8-f533-a790bc0ff062"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="9305d9f6-b058-e0f8-f533-a790bc0ff062"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
                           href="/careers"
                           className="nav_menu-link"
                         >

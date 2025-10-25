@@ -15,5 +15,7 @@ export default [
     route("/blog", "routes/resources/blog.tsx"),
     route("/glossary", "routes/resources/glossary.tsx"),
     route("/media-kit", "routes/resources/media-kit.tsx"),
+    route("/faqs", "routes/resources/faqs.tsx"),
+    route("/docs", "routes/resources/docs.tsx"),
   ]),
 ] satisfies RouteConfig;
