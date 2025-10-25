@@ -67,9 +67,9 @@ export function ProblemSection() {
                   </div>
                   <div className="home-problem_card_content">
                     <p className="home-problem_card_text text-size-xsmall">
-                      Arcium redefines our internet, leveraging decentralized
+                      Lambda redefines our internet, leveraging decentralized
                       systems and cryptography to create a new paradigm of data
-                      usability, control, and privacy. With Arcium, individuals,
+                      usability, control, and privacy. With Lambda, individuals,
                       applications and organizations across the internet can use
                       data to its full extent in an entirely encrypted state.
                     </p>
@@ -86,13 +86,13 @@ export function ProblemSection() {
                 <div className="home-problem_card">
                   <div className="max-40ch">
                     <h3 className="home-problem_card_text heading-style-h6">
-                      Arcium Is Like Hidden Photographic Memory
+                      Lambda Is Like Hidden Photographic Memory
                     </h3>
                   </div>
                   <div className="home-problem_card_content">
                     <p className="home-problem_card_text text-size-xsmall">
                       Imagine reading a book and understanding the entire story
-                      without ever reading the actual text. Arcium enables that
+                      without ever reading the actual text. Lambda enables that
                       for the internet, where applications and developers can
                       fully operate without ever needing to know the underlying
                       data they are processing.

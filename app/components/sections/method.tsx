@@ -23,7 +23,7 @@ export function MethodSection() {
                       </div>
                     </div>
                     <h2 className="section-heading-main_text heading-style-h3">
-                      Arcium’s road to building a better internet.
+                      Lambda’s road to building a better internet.
                     </h2>
                   </div>
                   <div
@@ -32,7 +32,7 @@ export function MethodSection() {
                   >
                     <p className="section-heading-main_text text-size-medium">
                       From a privacy application to a global supercomputer for
-                      encryption, Arcium is rooted in many years of research,
+                      encryption, Lambda is rooted in many years of research,
                       testing, and launching encrypted internet technology.
                     </p>
                   </div>

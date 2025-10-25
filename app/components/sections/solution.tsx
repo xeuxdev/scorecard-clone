@@ -24,7 +24,7 @@ export function SolutionSection() {
                       </div>
                     </div>
                     <h2 className="section-heading-main_text heading-style-h3">
-                      Decentralize Computing Power with Arcium
+                      Decentralize Computing Power with Lambda
                     </h2>
                   </div>
                   <div
@@ -33,7 +33,7 @@ export function SolutionSection() {
                   >
                     <p className="section-heading-main_text text-size-medium">
                       Instead of monopolies and centralized entities controlling
-                      and processing data, Arcium enables anyone to contribute
+                      and processing data, Lambda enables anyone to contribute
                       computing power. Choose your role and become part of the
                       distributed future.
                     </p>
@@ -53,13 +53,13 @@ export function SolutionSection() {
                       Run a Node
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Run arxOS to become a 'core' of Arcium's computing power
+                      Run arxOS to become a 'core' of Lambda's computing power
                       to unlock the internet's full potential.
                     </p>
                   </div>
                   <div className="info-card_visuals">
                     <img
-                      src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/68123452a0e70feda617e21f_abc8f3303f565961c2e91a1e455c8ba8_solution-img-1.svg"
+                      src="/run-a-node.svg"
                       loading="lazy"
                       id="w-node-_6bfd0fc7-f761-fa56-0d98-29de39a1ff2d-0fca1c98"
                       alt="A view of lambda&#x27;s dashboard live tracking."
@@ -87,7 +87,7 @@ export function SolutionSection() {
                   </div>
                   <div className="info-card_visuals">
                     <img
-                      src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681234a6f07b44bee4f80a31_solution-img-2.svg"
+                      src="/build-apps.svg"
                       loading="lazy"
                       id="w-node-_4129b728-9424-49bf-f693-fc7d422e9162-0fca1c98"
                       alt="A view of lambda&#x27;s dashboard prompt tracking."
@@ -109,13 +109,13 @@ export function SolutionSection() {
                       Stake and Secure
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Stake Arcium tokens to secure the network and contribute
+                      Stake Lambda tokens to secure the network and contribute
                       to the development of the systems.
                     </p>
                   </div>
                   <div className="info-card_visuals">
                     <img
-                      src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681234a452cc8a524c14c886_solution-img-3.svg"
+                      src="/stake-secure.svg"
                       loading="lazy"
                       id="w-node-e2cfaf67-4103-0d59-583d-adf7d92a8990-0fca1c98"
                       alt="A view of Lambda metrics managment."
@@ -143,7 +143,7 @@ export function SolutionSection() {
                   </div>
                   <div className="info-card_visuals">
                     <img
-                      src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681235188d82a2074d6f1f99_74cecff4930797262298dfcfc97ddacf_solution-img-4.svg"
+                      src="/engage-expand.svg"
                       loading="lazy"
                       id="w-node-_6d59e079-88c1-46f4-84e9-c162fd0e95a6-0fca1c98"
                       alt="A view of the Lambda&#x27;s dashboard."

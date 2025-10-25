@@ -13,7 +13,7 @@ export default function HomeBlackBox() {
                 </div>
                 <div className="home-blackbox_content-block">
                   <p className="home-blackbox_text text-size-medium">
-                    Arcium is a global supercomputer for a new internet,
+                    Lambda is a global supercomputer for a new internet,
                     providing developers, applications and entire industries
                     with a trustless, verifiable, and efficient framework to run
                     encrypted computations.
