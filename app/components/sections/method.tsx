@@ -74,7 +74,7 @@ export function MethodSection() {
                   <div className="scorecard-method_content-wrap">
                     <div className="scorecard-method_title-wrap">
                       <div className="scorecard-method_text subtitle-size-2">
-                        SCORECARD Workflow
+                        LAMBDA Workflow
                       </div>
                     </div>
                     <div className="scorecard-method_lottie-wrap">

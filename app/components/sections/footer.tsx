@@ -256,10 +256,6 @@ export function Footer() {
               <div className="footer_git-link-wrapper">
                 <a
                   aria-label="Visit our Github"
-                  data-wf-native-id-path="80fe2612-5600-37fa-7b67-ba08b7dc67a0:946da7e2-0374-1887-bdc2-62df8659bec2"
-                  data-wf-ao-click-engagement-tracking="true"
-                  data-wf-element-id="946da7e2-0374-1887-bdc2-62df8659bec2"
-                  data-wf-component-context="%5B%7B%22componentId%22%3A%22946da7e2-0374-1887-bdc2-62df8659be89%22%2C%22instanceId%22%3A%2280fe2612-5600-37fa-7b67-ba08b7dc67a0%22%7D%5D"
                   href="https://github.com/scorecard-ai"
                   target="_blank"
                   className="footer_primary-link"
@@ -269,10 +265,6 @@ export function Footer() {
               </div>
               <a
                 aria-label="Go to our LinkedIn profile"
-                data-wf-native-id-path="80fe2612-5600-37fa-7b67-ba08b7dc67a0:946da7e2-0374-1887-bdc2-62df8659bec6"
-                data-wf-ao-click-engagement-tracking="true"
-                data-wf-element-id="946da7e2-0374-1887-bdc2-62df8659bec6"
-                data-wf-component-context="%5B%7B%22componentId%22%3A%22946da7e2-0374-1887-bdc2-62df8659be89%22%2C%22instanceId%22%3A%2280fe2612-5600-37fa-7b67-ba08b7dc67a0%22%7D%5D"
                 href="https://www.linkedin.com/company/scorecard-ai/"
                 target="_blank"
                 className="footer_primary-link"
@@ -283,10 +275,6 @@ export function Footer() {
             <div className="footer_secondary-content">
               <a
                 aria-label="Go to our Terms of Use"
-                data-wf-native-id-path="80fe2612-5600-37fa-7b67-ba08b7dc67a0:946da7e2-0374-1887-bdc2-62df8659bec9"
-                data-wf-ao-click-engagement-tracking="true"
-                data-wf-element-id="946da7e2-0374-1887-bdc2-62df8659bec9"
-                data-wf-component-context="%5B%7B%22componentId%22%3A%22946da7e2-0374-1887-bdc2-62df8659be89%22%2C%22instanceId%22%3A%2280fe2612-5600-37fa-7b67-ba08b7dc67a0%22%7D%5D"
                 href="/terms-of-service"
                 className="footer_secondary-link"
               >
@@ -294,10 +282,6 @@ export function Footer() {
               </a>
               <a
                 aria-label="Go to our Privacy Policy"
-                data-wf-native-id-path="80fe2612-5600-37fa-7b67-ba08b7dc67a0:946da7e2-0374-1887-bdc2-62df8659becb"
-                data-wf-ao-click-engagement-tracking="true"
-                data-wf-element-id="946da7e2-0374-1887-bdc2-62df8659becb"
-                data-wf-component-context="%5B%7B%22componentId%22%3A%22946da7e2-0374-1887-bdc2-62df8659be89%22%2C%22instanceId%22%3A%2280fe2612-5600-37fa-7b67-ba08b7dc67a0%22%7D%5D"
                 href="/privacy-policy"
                 className="footer_secondary-link"
               >
@@ -309,7 +293,7 @@ export function Footer() {
               <span data-current-year="" className="data-year-dynamic">
                 2025
               </span>{" "}
-              scorecard – all rights reserved
+              lambda - all rights reserved
             </div>
           </div>
         </div>

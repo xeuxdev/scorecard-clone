@@ -1,5 +1,3 @@
-import React from "react";
-
 export function ProblemSection() {
   return (
     <section className="section_home-problem">

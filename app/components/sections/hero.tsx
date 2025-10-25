@@ -354,7 +354,7 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Arcium enables AI models to train on encrypted data,
+                            Lambda enables AI models to train on encrypted data,
                             expanding diversity while preserving integrity and
                             privacy.
                           </div>
@@ -363,19 +363,19 @@ export function HeroSection() {
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fec9c436cbfd69524a_a883881d4b654cb1bc0e62fe8b84dfad_home-hero-tab-1_desktop.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-1"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fec99124a246e0298a_e2c25c893320785274cba439f55e3ea0_home-hero-tab-1_tablet.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-1-tablet"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe6a7a242a7affa93a_299a8ff9652951b7dcbc78942e859067_home-hero-tab-1_mobile.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-1-mobile"
                           />
                         </div>
@@ -390,7 +390,7 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Arcium provides critical confidentiality for
+                            Lambda provides critical confidentiality for
                             transparent blockchains, ensuring DeFi applications
                             and use cases operate securely with protection.
                           </div>
@@ -399,19 +399,19 @@ export function HeroSection() {
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fea068a1e3b79be441_00d71ee4d4efc1c2bdcbdfd8f509a05b_home-hero-tab-2_desktop.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-3"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe9addd4c582c32837_289bee88abd8625531b1d08d6a7dd182_home-hero-tab-2_tablet.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-3-tablet"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe76bd2c092735f02c_733afb9652f7e0fcbc98fca8e185bd98_home-hero-tab-2_mobile.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-3-mobile"
                           />
                         </div>
@@ -426,7 +426,7 @@ export function HeroSection() {
                       <div className="tab-visual__inner">
                         <div className="tab-visual__content">
                           <div className="tab-visual__content_text">
-                            Arcium empowers physical infrastructure networks to
+                            Lambda empowers physical infrastructure networks to
                             unlock sensitive data insights, powering
                             decentralized economies of tomorrow securely.
                           </div>
@@ -435,19 +435,19 @@ export function HeroSection() {
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe94d0f9d7474205a4_7567ef9916a4f80688a6066f1e6110ad_home-hero-tab-3_desktop.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-5"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe8b62de74dae7378a_3a90cf84cc2f5cc468336f807a8c0764_home-hero-tab-3_tablet.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-5-tablet"
                           />
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683725fe71d9edd65eb04cb2_a577abf28b8cefe6264b4d1023cbe178_home-hero-tab-3_mobile.svg"
-                            alt="Scorecard features UI Components"
+                            alt="lambda features UI Components"
                             className="tab-image-5-mobile"
                           />
                         </div>

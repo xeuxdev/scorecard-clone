@@ -62,7 +62,7 @@ export function SolutionSection() {
                       src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/68123452a0e70feda617e21f_abc8f3303f565961c2e91a1e455c8ba8_solution-img-1.svg"
                       loading="lazy"
                       id="w-node-_6bfd0fc7-f761-fa56-0d98-29de39a1ff2d-0fca1c98"
-                      alt="A view of Scorecard&#x27;s dashboard live tracking."
+                      alt="A view of lambda&#x27;s dashboard live tracking."
                       className="info-cards_image"
                     />
                   </div>
@@ -90,7 +90,7 @@ export function SolutionSection() {
                       src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681234a6f07b44bee4f80a31_solution-img-2.svg"
                       loading="lazy"
                       id="w-node-_4129b728-9424-49bf-f693-fc7d422e9162-0fca1c98"
-                      alt="A view of Scorecard&#x27;s dashboard prompt tracking."
+                      alt="A view of lambda&#x27;s dashboard prompt tracking."
                       className="info-cards_image"
                     />
                   </div>
@@ -118,7 +118,7 @@ export function SolutionSection() {
                       src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681234a452cc8a524c14c886_solution-img-3.svg"
                       loading="lazy"
                       id="w-node-e2cfaf67-4103-0d59-583d-adf7d92a8990-0fca1c98"
-                      alt="A view of Scorecard metrics managment."
+                      alt="A view of Lambda metrics managment."
                       className="info-cards_image"
                     />
                   </div>
@@ -146,7 +146,7 @@ export function SolutionSection() {
                       src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/681235188d82a2074d6f1f99_74cecff4930797262298dfcfc97ddacf_solution-img-4.svg"
                       loading="lazy"
                       id="w-node-_6d59e079-88c1-46f4-84e9-c162fd0e95a6-0fca1c98"
-                      alt="A view of the Scorecard&#x27;s dashboard."
+                      alt="A view of the Lambda&#x27;s dashboard."
                       className="info-cards_image"
                     />
                   </div>
