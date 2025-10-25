@@ -16,10 +16,6 @@ export function Navbar() {
               <div className="nav_inner">
                 <a
                   aria-label="Go to Home page"
-                  data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff3d"
-                  data-wf-ao-click-engagement-tracking="true"
-                  data-wf-element-id="239f1b45-0e10-342d-f1d6-e9d41e1cff3d"
-                  data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
                   href="/"
                   aria-current="page"
                   className="nav_brand w-nav-brand w--current"
@@ -96,19 +92,15 @@ export function Navbar() {
                 <nav role="navigation" className="nav_menu w-nav-menu">
                   <div className="nav_menu-inner">
                     <ul id="" className="nav_menu-links">
-                      <li className="nav_menu-li">
+                      {/* <li className="nav_menu-li">
                         <a
                           aria-label="Go to Product page"
-                          data-wf-native-id-path="d9e231a2-eeb2-dbe4-d410-83494813761d:239f1b45-0e10-342d-f1d6-e9d41e1cff4e"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="239f1b45-0e10-342d-f1d6-e9d41e1cff4e"
-                          data-wf-component-context="%5B%7B%22componentId%22%3A%22239f1b45-0e10-342d-f1d6-e9d41e1cff37%22%2C%22instanceId%22%3A%22d9e231a2-eeb2-dbe4-d410-83494813761d%22%7D%5D"
                           href="/product"
                           className="nav_menu-link"
                         >
                           Product
                         </a>
-                      </li>
+                      </li> */}
 
                       <li className="nav_menu-li">
                         <a

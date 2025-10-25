@@ -283,7 +283,7 @@ export default function FAQsPage() {
                 </span>
               </div>
 
-              <h1 className="section-heading-main_text heading-style-h2 mb-6">
+              <h1 className="section-heading-main_text heading-style-h2 mb-6!">
                 Frequently Asked Questions
               </h1>
 
