@@ -13,6 +13,7 @@ export default [
     route("/careers", "routes/careers.tsx"),
     route("/about-us", "routes/about-us.tsx"),
     route("/blog", "routes/resources/blog.tsx"),
+    route("/blog/:slug", "routes/resources/blog-details.tsx"),
     route("/glossary", "routes/resources/glossary.tsx"),
     route("/media-kit", "routes/resources/media-kit.tsx"),
     route("/faqs", "routes/resources/faqs.tsx"),

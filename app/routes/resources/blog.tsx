@@ -79,11 +79,6 @@ export default function BlogPage() {
                         <div className="blog-card_copy">
                           <a
                             fs-list-field="title"
-                            data-wf-native-id-path="eeb045e5-2ee9-c01c-7eaa-80a268871445_instance-0:7bf64e2d-97ca-a692-f731-062d325b312e_instance-0"
-                            data-wf-ao-click-engagement-tracking="true"
-                            data-wf-element-id="7bf64e2d-97ca-a692-f731-062d325b312e"
-                            data-wf-cms-context="%5B%7B%22collectionId%22%3A%22682dd348e5ac1cff205ff8aa%22%2C%22itemId%22%3A%2268d4d138b14e20541341ff58%22%7D%5D"
-                            data-wf-component-context="%5B%7B%22componentId%22%3A%227bf64e2d-97ca-a692-f731-062d325b311c%22%2C%22instanceId%22%3A%22eeb045e5-2ee9-c01c-7eaa-80a268871445%22%7D%5D"
                             href="/blog/scorecard-raises-3-75m-to-test-and-deploy-ai-agents-100x-faster"
                             className="blog-card_title heading-style-h4"
                           >
@@ -100,15 +95,8 @@ export default function BlogPage() {
                         <div className="blog-card_cta">
                           <a
                             className="button-primary w-inline-block"
-                            data-wf-component-context="%5B%7B%22componentId%22%3A%227bf64e2d-97ca-a692-f731-062d325b311c%22%2C%22instanceId%22%3A%22eeb045e5-2ee9-c01c-7eaa-80a268871445%22%7D%2C%7B%22componentId%22%3A%22b4d05707-5080-4fcb-8c01-6a13b4c7bf00%22%2C%22instanceId%22%3A%227bf64e2d-97ca-a692-f731-062d325b3133%22%7D%5D"
-                            data-wf-element-id="b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                            data-wf-event-ids="157055388"
                             href="/blog/scorecard-raises-3-75m-to-test-and-deploy-ai-agents-100x-faster"
                             aria-label="Read Article"
-                            data-wf-cms-context="%5B%7B%22collectionId%22%3A%22682dd348e5ac1cff205ff8aa%22%2C%22itemId%22%3A%2268d4d138b14e20541341ff58%22%7D%5D"
-                            role="button"
-                            data-wf-native-id-path="eeb045e5-2ee9-c01c-7eaa-80a268871445_instance-0:7bf64e2d-97ca-a692-f731-062d325b3133_instance-0:b4d05707-5080-4fcb-8c01-6a13b4c7bf00_instance-0"
-                            data-wf-ao-click-engagement-tracking="true"
                           >
                             <span className="button-primary_bg"></span>
                             <span
