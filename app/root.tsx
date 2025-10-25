@@ -93,8 +93,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         {/* <!-- SwiperJS Install --> */}
 
-        {/* <script src="/js/gsap.min.js"></script> */}
-        {/* <script src="/js/ScrollTrigger.min.js"></script> */}
+        <script src="/js/gsap.min.js"></script>
+        <script src="/js/ScrollTrigger.min.js"></script>
         {/* <script src="/js/lenis.min.js"></script> */}
         {/* <script src="/js/index.min.js"></script> */}
         {/* <script src="https://unpkg.com/split-type"></script> */}
