@@ -17,8 +17,8 @@ export function meta({}: Route.MetaArgs) {
     },
     {
       property: "og:image",
-      content:
-        "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
+      // content:
+      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_lambda-open-graph.jpg",
     },
     { property: "twitter:title", content: "Privacy Policy | Lambda" },
     {
@@ -28,8 +28,8 @@ export function meta({}: Route.MetaArgs) {
     },
     {
       property: "twitter:image",
-      content:
-        "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
+      // content:
+      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_lambda-open-graph.jpg",
     },
     { property: "og:type", content: "website" },
   ];
@@ -55,7 +55,7 @@ export default function PrivacyPolicyPage() {
                 </div>
                 <div className="legal-page_content">
                   <div className="legal-rich-text w-richtext">
-                    <p>Welcome to Scorecard AI</p>
+                    <p>Welcome to Lambda</p>
                     <p>
                       We value your privacy and want to be clear about the data
                       we collect, how we use it, and your rights to control that
@@ -63,12 +63,12 @@ export default function PrivacyPolicyPage() {
                       security very seriously. Should you have any queries or
                       concerns, we're here to answer. Reach out to us at{" "}
                       <a
-                        href="mailto:contact@getscorecard.ai?subject=Contact%20Scorecard"
+                        href="mailto:contact@getlambda.ai?subject=Contact%20Lambda"
                         data-wf-native-id-path="b073e5e4-5544-85a0-b269-8e340a3642fa"
                         data-wf-ao-click-engagement-tracking="true"
                         data-wf-element-id="b073e5e4-5544-85a0-b269-8e340a3642fa"
                       >
-                        team@scorecard.io
+                        team@lambda.io
                       </a>{" "}
                       anytime.
                     </p>
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
                     <p>
                       We only collect necessary personal information that you
                       voluntarily provide to us when using our website
-                      getscorecard.ai, or when you express an interest in our
+                      getlambda.ai, or when you express an interest in our
                       products and services. Here's a brief overview:
                     </p>
                     <ul role="list" className="list-disc">
@@ -160,12 +160,12 @@ export default function PrivacyPolicyPage() {
                       For any questions or comments about this policy, please
                       contact us at{" "}
                       <a
-                        href="mailto:contact@getscorecard.ai?subject=Contact%20Scorecard"
+                        href="mailto:contact@getlambda.ai?subject=Contact%20Lambda"
                         data-wf-native-id-path="f240dcc8-4d41-450c-975d-2264abaa8e21"
                         data-wf-ao-click-engagement-tracking="true"
                         data-wf-element-id="f240dcc8-4d41-450c-975d-2264abaa8e21"
                       >
-                        team@scorecard.io
+                        team@lambda.io
                       </a>
                       .
                     </p>

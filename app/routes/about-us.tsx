@@ -1,5 +1,3 @@
-import React from "react";
-import { PageEmbed } from "~/components/page-embed";
 import { ControlSection } from "~/components/sections/control";
 import { Footer } from "~/components/sections/footer";
 
@@ -54,7 +52,7 @@ export default function AboutUsPage() {
                     src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/6808dfe3ed7adf1139c78a1e_about-hero-image.avif"
                     loading="lazy"
                     sizes="(max-width: 2016px) 100vw, 2016px"
-                    alt="Scorecard crew together"
+                    alt="Lambda crew together"
                     className="cover-image"
                   />
                 </div>
@@ -82,16 +80,16 @@ export default function AboutUsPage() {
                 >
                   <p className="about-who_text text-size-regular">
                     Our experience with AI testing problems inspired the start
-                    of Scorecard. We found companies racing to build AI, relying
-                    on spreadsheets and gut reactions. This approach introduces
-                    a lot of risk and leaves opportunities on the table. Our
-                    team combines expertise in AI testing and practical business
+                    of Lambda. We found companies racing to build AI, relying on
+                    spreadsheets and gut reactions. This approach introduces a
+                    lot of risk and leaves opportunities on the table. Our team
+                    combines expertise in AI testing and practical business
                     experience. We understand the challenge of evaluating
                     unpredictable systems. We also know about the pressure to
                     ship products quickly and confidently.
                     <br />
                     <br />
-                    We built Scorecard to replace subjective reviews with
+                    We built Lambda to replace subjective reviews with
                     structured testing. Our vision is to help companies improve
                     testing and upgrade AI products with continuous evaluation
                     and smart recommendations.
@@ -105,7 +103,7 @@ export default function AboutUsPage() {
                     src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/68092accc25dfb749694fece_about-us-image-1.avif"
                     loading="lazy"
                     sizes="(max-width: 990px) 100vw, 990px"
-                    alt="Scorecard crew together"
+                    alt="Lambda crew together"
                     className="about-who_image"
                   />
                 </div>
@@ -117,7 +115,7 @@ export default function AboutUsPage() {
                     src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/68092acb0c2569407373970f_e36d2caac27e5f688faaa4390f5093f3_about-us-image-2.avif"
                     loading="lazy"
                     sizes="(max-width: 990px) 100vw, 990px"
-                    alt="Scorecard crew together"
+                    alt="Lambda crew together"
                     className="about-who_image"
                   />
                 </div>

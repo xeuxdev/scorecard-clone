@@ -17,8 +17,8 @@ export function meta({}: Route.MetaArgs) {
     },
     {
       property: "og:image",
-      content:
-        "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
+      // content:
+      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_lambda-open-graph.jpg",
     },
     { property: "twitter:title", content: "Terms of Service | Lambda" },
     {
@@ -28,8 +28,8 @@ export function meta({}: Route.MetaArgs) {
     },
     {
       property: "twitter:image",
-      content:
-        "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
+      // content:
+      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_lambda-open-graph.jpg",
     },
     { property: "og:type", content: "website" },
   ];
@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
                 >
                   <div className="legal-page_heading-content">
                     <h1 className="legal-page_text heading-style-h2">
-                      Scorecard AI, Terms of Service (“Agreement”)
+                      Lambda AI, Terms of Service (“Agreement”)
                     </h1>
                     <p className="legal-page_text subtitle-size-2 text-color-secondary">
                       V1.1 - Last edited on May 30, 2023
@@ -64,23 +64,23 @@ export default function TermsOfServicePage() {
                     <div className="legal-rich-text w-richtext">
                       <p>
                         This Agreement is a contract between you, the customer
-                        (“Customer”), and Scorecard Technologies, Inc.
-                        (“Scorecard”). It commences when you first sign up for
-                        Scorecard’s services online or sign the first Order
-                        Form, whichever occurs first.
+                        (“Customer”), and Lambda Technologies, Inc. (“Lambda”).
+                        It commences when you first sign up for Lambda’s
+                        services online or sign the first Order Form, whichever
+                        occurs first.
                       </p>
                       <h2>1. The Services</h2>
                       <p>
-                        Scorecard provides a suite of digital tools and
+                        Lambda provides a suite of digital tools and
                         applications for evaluating AI products, which are
                         accessible via our website and applications.
                       </p>
                       <h2>2. Using the Services</h2>
                       <p>
-                        2.1 Access. Scorecard will provide you with secure
-                        access protocols such as usernames and passwords. You
-                        are responsible for your employees’ and contractors’ use
-                        of the Services.
+                        2.1 Access. Lambda will provide you with secure access
+                        protocols such as usernames and passwords. You are
+                        responsible for your employees’ and contractors’ use of
+                        the Services.
                       </p>
                       <p>
                         2.2 Creating Accounts. To use our Services, you will
@@ -102,14 +102,14 @@ export default function TermsOfServicePage() {
                           Use the Services in violation of this Agreement or in
                           a manner that could cause harm.
                         </li>
-                        <li>Misrepresent Scorecard or third parties.</li>
+                        <li>Misrepresent Lambda or third parties.</li>
                         <li>Violate laws or infringe third party rights.</li>
                       </ul>
                       <p>
-                        2.4 Testing AI Products. You grant Scorecard access to
-                        your AI products for testing purposes. You retain
-                        ownership of your AI products while permitting Scorecard
-                        to use them within the Services.
+                        2.4 Testing AI Products. You grant Lambda access to your
+                        AI products for testing purposes. You retain ownership
+                        of your AI products while permitting Lambda to use them
+                        within the Services.
                       </p>
                       <h2>3. Payments</h2>
                       <p>
@@ -130,8 +130,8 @@ export default function TermsOfServicePage() {
                           Neither party will be liable for indirect damages.
                         </li>
                         <li>
-                          Scorecard's liability shall not exceed the fees you
-                          paid in the year preceding the claim.
+                          Lambda's liability shall not exceed the fees you paid
+                          in the year preceding the claim.
                         </li>
                       </ul>
                       <h2>5. Termination</h2>
@@ -151,8 +151,8 @@ export default function TermsOfServicePage() {
                       </p>
                       <h2>6. Data Privacy and Security</h2>
                       <p>
-                        Scorecard is committed to protecting your data and
-                        content in compliance with applicable law.
+                        Lambda is committed to protecting your data and content
+                        in compliance with applicable law.
                       </p>
                       <h2>7. Confidentiality</h2>
                       <p>
@@ -165,7 +165,7 @@ export default function TermsOfServicePage() {
                       <h2>8. Indemnification</h2>
                       <p>
                         If third parties claim that the Services infringe their
-                        intellectual property rights, Scorecard will defend or
+                        intellectual property rights, Lambda will defend or
                         settle these claims, provided you promptly inform us in
                         writing and cooperate with us.
                       </p>
@@ -177,10 +177,9 @@ export default function TermsOfServicePage() {
                       </p>
                       <h2>9. Changes to Terms</h2>
                       <p>
-                        Scorecard may update these terms by notifying you.
-                        Changes take effect at the start of your next payment
-                        cycle unless you terminate within 30 days of receiving
-                        notice.
+                        Lambda may update these terms by notifying you. Changes
+                        take effect at the start of your next payment cycle
+                        unless you terminate within 30 days of receiving notice.
                       </p>
                       <h2>10. General</h2>
                       <p>
@@ -198,15 +197,7 @@ export default function TermsOfServicePage() {
                       </p>
                       <p>
                         10.4 Notices under this Agreement should be sent in
-                        writing to{" "}
-                        <a
-                          href="mailto:legal@scorecard.ai?subject=Contact%20Scorecard%20Legal%20team"
-                          data-wf-native-id-path="24b85dae-c9d2-c3b1-cc8c-90782a6e6bc0"
-                          data-wf-ao-click-engagement-tracking="true"
-                          data-wf-element-id="24b85dae-c9d2-c3b1-cc8c-90782a6e6bc0"
-                        >
-                          legal@scorecard.ai
-                        </a>
+                        writing to <a>legal@lambda.ai</a>
                       </p>
                       <p>
                         10.5 Neither party will be liable for delays or failures

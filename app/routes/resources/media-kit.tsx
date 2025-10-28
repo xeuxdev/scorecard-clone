@@ -5,14 +5,14 @@ const mediaKitItems = [
     id: "brand-assets",
     title: "Brand Assets",
     description:
-      "Complete collection of Scorecard brand assets including logos, icons, and brand guidelines for official use.",
+      "Complete collection of Lambda brand assets including logos, icons, and brand guidelines for official use.",
     items: [
       {
         id: "logos-without-bg",
         title: "Logos without Background",
         description:
           "High quality logos with transparent backgrounds for scalable use.",
-        downloadUrl: "/assets/scorecard-logos-bg.zip",
+        downloadUrl: "/assets/lambda-logos-bg.zip",
         icon: "📁",
       },
       {
@@ -20,7 +20,7 @@ const mediaKitItems = [
         title: "Logos with Background",
         description:
           "High quality logos with backgrounds for use on various media.",
-        downloadUrl: "/assets/scorecard-logos.zip",
+        downloadUrl: "/assets/lambda-logos.zip",
         icon: "🖼️",
       },
       {
@@ -28,7 +28,7 @@ const mediaKitItems = [
         title: "Complete Logo Kit",
         description:
           "All logo variations, color schemes, and usage guidelines in one package.",
-        downloadUrl: "/assets/scorecard-logos-complete.zip",
+        downloadUrl: "/assets/lambda-logos-complete.zip",
         icon: "📦",
       },
     ],
@@ -44,7 +44,7 @@ const mediaKitItems = [
         title: "Social Media Graphics",
         description:
           "Optimized graphics for Twitter, LinkedIn, and other platforms.",
-        downloadUrl: "/assets/scorecard-social-media-assets.zip",
+        downloadUrl: "/assets/lambda-social-media-assets.zip",
         icon: "📱",
       },
       {
@@ -52,15 +52,14 @@ const mediaKitItems = [
         title: "Presentation Templates",
         description:
           "Ready-to-use presentation templates with brand guidelines applied.",
-        downloadUrl: "/assets/scorecard-presentations.zip",
+        downloadUrl: "/assets/lambda-presentations.zip",
         icon: "📊",
       },
       {
         id: "email-templates",
         title: "Email Templates",
-        description:
-          "Email marketing templates designed with Scorecard branding.",
-        downloadUrl: "/assets/scorecard-email-templates.zip",
+        description: "Email marketing templates designed with Lambda branding.",
+        downloadUrl: "/assets/lambda-email-templates.zip",
         icon: "✉️",
       },
     ],
@@ -75,23 +74,23 @@ const mediaKitItems = [
         id: "product-screenshots",
         title: "Product Screenshots",
         description:
-          "High-resolution screenshots of Scorecard interface and features.",
-        downloadUrl: "/assets/scorecard-screenshots.zip",
+          "High-resolution screenshots of Lambda interface and features.",
+        downloadUrl: "/assets/lambda-screenshots.zip",
         icon: "🖥️",
       },
       {
         id: "documentation",
         title: "Documentation",
         description: "Technical documentation and API reference materials.",
-        downloadUrl: "/assets/scorecard-documentation.zip",
+        downloadUrl: "/assets/lambda-documentation.zip",
         icon: "📚",
       },
       {
         id: "integration-guides",
         title: "Integration Guides",
         description:
-          "Step-by-step guides for integrating Scorecard with other platforms.",
-        downloadUrl: "/assets/scorecard-integration-guides.zip",
+          "Step-by-step guides for integrating Lambda with other platforms.",
+        downloadUrl: "/assets/lambda-integration-guides.zip",
         icon: "🔗",
       },
     ],
@@ -143,7 +142,7 @@ export default function MediaKitPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-                Download official Scorecard brand assets, logos, and marketing
+                Download official Lambda brand assets, logos, and marketing
                 materials. All assets are provided for media, partner, and
                 developer use.
               </p>

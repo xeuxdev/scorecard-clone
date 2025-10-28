@@ -1,3 +1,5 @@
+import { BiChevronDown } from "react-icons/bi";
+
 export function Navbar() {
   return (
     <div className="nav_fixed">
@@ -67,7 +69,7 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <div className="nav_dropdown">
                           <button
-                            className="nav_menu-link nav_dropdown-toggle"
+                            className="nav_menu-link nav_dropdown-toggle text-sm! mt-0.5!"
                             aria-label="Resources"
                             aria-expanded="false"
                             onClick={(e) => {
@@ -85,7 +87,9 @@ export function Navbar() {
                             }}
                           >
                             Resources
-                            <span className="nav_dropdown-icon">▼</span>
+                            <span className="nav_dropdown-icon">
+                              <BiChevronDown size={20} />
+                            </span>
                           </button>
                           <ul className="nav_dropdown-menu">
                             <li className="nav_dropdown-item">

@@ -1,4 +1,3 @@
-import { PageEmbed } from "~/components/page-embed";
 import { ControlSection } from "~/components/sections/control";
 import { Footer } from "~/components/sections/footer";
 
@@ -94,7 +93,7 @@ export default function CareersPage() {
                     className="section-heading-main_content text-wrap-balance"
                   >
                     <p className="section-heading-main_text text-size-medium">
-                      At Scorecard, we’re passionate about empowering people to
+                      At Lambda, we’re passionate about empowering people to
                       build and deliver dependable AI products. We provide the
                       platform to support teams from prototype to production for
                       Large Language Models (LLMs).
@@ -115,13 +114,13 @@ export default function CareersPage() {
                   loading="lazy"
                   sizes="(max-width: 731px) 100vw, 731px"
                   srcSet="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffd563b7af470b8482_careers-hero-img-1-p-500.avif 500w, https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffd563b7af470b8482_careers-hero-img-1.avif 731w"
-                  alt="Scorecard Team"
+                  alt="Lambda Team"
                   className="career-hero-visuals_img-1"
                 />
                 <img
                   src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ff35f451cd5e5c328c_careers-hero-logo.svg"
                   loading="lazy"
-                  alt="Scorecard Logo"
+                  alt="Lambda Logo"
                   className="career-hero-visuals_img-2"
                 />
                 <img
@@ -129,7 +128,7 @@ export default function CareersPage() {
                   loading="lazy"
                   sizes="(max-width: 698px) 100vw, 698px"
                   srcSet="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffebd801e80f7e9a46_careers-hero-img-2-p-500.avif 500w, https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffebd801e80f7e9a46_careers-hero-img-2.avif 698w"
-                  alt="Scorecard Team"
+                  alt="Lambda Team"
                   className="career-hero-visuals_img-1"
                 />
               </div>
@@ -256,10 +255,6 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                data-wf-native-id-path="87802645-3a18-e849-f25a-9ae8f4d02510_instance-0"
-                                data-wf-ao-click-engagement-tracking="true"
-                                data-wf-element-id="87802645-3a18-e849-f25a-9ae8f4d02510"
-                                data-wf-cms-context="%5B%7B%22collectionId%22%3A%2268308259a60c3fbf193aa1a2%22%2C%22itemId%22%3A%22683083f2cd3903a89acdbea9%22%7D%5D"
                                 href="/careers/software-engineer"
                                 className="open-role_card-link w-inline-block"
                               >
@@ -340,10 +335,6 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                data-wf-native-id-path="87802645-3a18-e849-f25a-9ae8f4d02510_instance-1"
-                                data-wf-ao-click-engagement-tracking="true"
-                                data-wf-element-id="87802645-3a18-e849-f25a-9ae8f4d02510"
-                                data-wf-cms-context="%5B%7B%22collectionId%22%3A%2268308259a60c3fbf193aa1a2%22%2C%22itemId%22%3A%22683083f0ba6856baeaef4fbe%22%7D%5D"
                                 href="/careers/founding-ux-designer"
                                 className="open-role_card-link w-inline-block"
                               >
@@ -424,10 +415,6 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                data-wf-native-id-path="87802645-3a18-e849-f25a-9ae8f4d02510_instance-2"
-                                data-wf-ao-click-engagement-tracking="true"
-                                data-wf-element-id="87802645-3a18-e849-f25a-9ae8f4d02510"
-                                data-wf-cms-context="%5B%7B%22collectionId%22%3A%2268308259a60c3fbf193aa1a2%22%2C%22itemId%22%3A%22683083f05f04ce1d17f210fc%22%7D%5D"
                                 href="/careers/founding-gtm"
                                 className="open-role_card-link w-inline-block"
                               >

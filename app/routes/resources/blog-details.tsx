@@ -119,7 +119,7 @@ export default function BlogDetailsPage() {
                     </div>
                     <div className="article-info_author">
                       <div className="article-info_text is-author">
-                        Scorecard Team
+                        Lambda Team
                       </div>
                       <div className="article-info_text is-author w-condition-invisible">
                         —
