@@ -1,6 +1,5 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import type { ReactNode } from "react";
 
 interface MarkdownRendererProps {
   content: string;
