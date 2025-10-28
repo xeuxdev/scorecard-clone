@@ -45,14 +45,10 @@ export function ControlSection() {
                   </p>
                   <a
                     className="button-primary w-inline-block"
-                    data-wf-component-context="%5B%7B%22componentId%22%3A%226b9235dc-8ddc-5528-a09f-0b5ce2da4312%22%2C%22instanceId%22%3A%226b9235dc-8ddc-5528-a09f-0b5ce2da4321%22%7D%2C%7B%22componentId%22%3A%22b4d05707-5080-4fcb-8c01-6a13b4c7bf00%22%2C%22instanceId%22%3A%226b9235dc-8ddc-5528-a09f-0b5ce2da431e%22%7D%5D"
-                    data-wf-element-id="b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                    data-wf-event-ids="157055388"
-                    href="/book-a-demo"
+                    href="/docs"
+                    target="_blank"
                     aria-label="Go to Book a Demo page"
                     role="button"
-                    data-wf-native-id-path="6b9235dc-8ddc-5528-a09f-0b5ce2da4321:6b9235dc-8ddc-5528-a09f-0b5ce2da431e:b4d05707-5080-4fcb-8c01-6a13b4c7bf00"
-                    data-wf-ao-click-engagement-tracking="true"
                   >
                     <span className="button-primary_bg"></span>
                     <span

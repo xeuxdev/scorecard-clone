@@ -111,14 +111,6 @@ export function Navbar() {
                                 FAQs
                               </a>
                             </li>
-                            <li className="nav_dropdown-item">
-                              <a
-                                href="/whitepaper"
-                                className="nav_dropdown-link"
-                              >
-                                Whitepaper
-                              </a>
-                            </li>
                           </ul>
                         </div>
                       </li>
@@ -142,7 +134,7 @@ export function Navbar() {
                       </li>
                     </ul>
                     <div className="nav_menu-buttons">
-                      <div className="nav_menu-button-wrapper">
+                      {/* <div className="nav_menu-button-wrapper">
                         <a
                           role="button"
                           aria-label="Explore testnet"
@@ -159,7 +151,7 @@ export function Navbar() {
                             </span>
                           </span>
                         </a>
-                      </div>
+                      </div> */}
                       <div className="nav_menu-button-wrapper">
                         <a
                           className="button-primary w-inline-block"

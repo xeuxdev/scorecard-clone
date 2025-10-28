@@ -179,7 +179,7 @@ export function HeroSection() {
                 </h1>
               </div>
               <div className="home-hero_button-wrapper">
-                <div className="home-hero_button-wrap">
+                {/* <div className="home-hero_button-wrap">
                   <a
                     role="button"
                     aria-label="Explore testnet"
@@ -196,7 +196,7 @@ export function HeroSection() {
                       </span>
                     </span>
                   </a>
-                </div>
+                </div> */}
                 <div className="home-hero_button-wrap">
                   <a
                     className="button-primary w-inline-block"

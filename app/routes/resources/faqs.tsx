@@ -9,31 +9,31 @@ const faqCategories = [
         id: "what-is-lambda",
         question: "What is Lambda?",
         answer:
-          "Lambda is a comprehensive AI evaluation platform that enables organizations to systematically test, measure, and validate AI systems with rigorous metrics and frameworks. We provide the tools and methodology to ensure AI systems meet quality standards before and after deployment.",
+          "Lambda is a comprehensive AI evaluation and continuous improvement platform that enables organizations to systematically test, measure, and validate AI systems with rigorous metrics and frameworks. It combines structured testing methodologies, automated evaluation metrics, and AI-powered insights to ensure AI systems meet quality standards before, during, and after deployment.",
+      },
+      {
+        id: "what-problem-does-lambda-solve",
+        question: "What problem does Lambda solve?",
+        answer:
+          "AI systems are increasingly complex and difficult to evaluate consistently. Lambda solves the challenge of systematically assessing AI quality by providing a unified platform for structured evaluation, continuous monitoring, and data-driven decision-making. It helps organizations identify performance issues, detect drift, optimize thresholds, and maintain confidence in their AI systems throughout their lifecycle.",
+      },
+      {
+        id: "who-uses-lambda",
+        question: "Who should use Lambda?",
+        answer:
+          "Lambda is designed for AI teams, machine learning engineers, product managers, QA engineers, and organizations deploying AI systems at scale. Whether you're building language models, recommendation systems, computer vision applications, or autonomous agents, Lambda helps ensure your AI meets quality standards and delivers on business requirements.",
+      },
+      {
+        id: "what-can-i-evaluate",
+        question: "What types of AI systems can I evaluate?",
+        answer:
+          "Lambda supports evaluating any AI system including large language models, computer vision models, recommendation engines, classification models, regression models, and more. Our framework is model-agnostic and works with proprietary models, open-source models, fine-tuned versions, and multi-model systems.",
       },
       {
         id: "how-does-lambda-work",
         question: "How does Lambda work?",
         answer:
-          "Lambda combines structured testing frameworks, automated evaluation metrics, and human-in-the-loop review processes. You define test cases, run your AI models against them, collect performance metrics across multiple dimensions, and receive comprehensive evaluations showing system performance across different categories.",
-      },
-      {
-        id: "who-should-use-lambda",
-        question: "Who should use Lambda?",
-        answer:
-          "Lambda is designed for AI teams, product managers, QA engineers, and organizations deploying AI systems. Whether you're building language models, recommendation systems, or autonomous agents, Lambda helps ensure your AI meets quality standards and business requirements.",
-      },
-      {
-        id: "what-models-does-lambda-support",
-        question: "What AI models does Lambda support?",
-        answer:
-          "Lambda supports evaluating any AI system including large language models, computer vision models, recommendation engines, classification models, and more. Our framework is model-agnostic, allowing you to test proprietary models, open-source models, or fine-tuned versions.",
-      },
-      {
-        id: "is-lambda-free",
-        question: "Is Lambda free to use?",
-        answer:
-          "Lambda offers a free tier for getting started with basic evaluation capabilities. Enterprise plans include advanced features like continuous monitoring, custom metrics, API access, and dedicated support. Contact our sales team for pricing details.",
+          "Lambda operates through a comprehensive workflow: 1) Define test cases representing real-world scenarios, 2) Run your AI models against these test cases, 3) Collect quantitative performance metrics across multiple dimensions, 4) Perform human-in-the-loop validation of critical cases, 5) Receive detailed quality reports and recommendations. This systematic approach ensures rigorous, reproducible evaluation of AI system quality.",
       },
     ],
   },
@@ -42,34 +42,34 @@ const faqCategories = [
     title: "Evaluation & Metrics",
     questions: [
       {
-        id: "what-metrics-does-lambda-measure",
-        question: "What metrics does Lambda measure?",
+        id: "what-is-structured-evaluation",
+        question: "What is structured evaluation?",
         answer:
-          "Lambda measures numerous metrics including accuracy, precision, recall, F1-score, latency, hallucination rates, bias indicators, confidence scores, and more. We provide both standard ML metrics and AI-specific measures for evaluating model behavior and safety.",
+          "Structured evaluation is a methodical approach to AI assessment using predefined test cases, clear success criteria, and quantifiable metrics instead of ad-hoc manual reviews. Lambda implements structured evaluation by organizing tests into categories, tracking results over time, enabling reproducible comparisons, and generating comprehensive quality reports with actionable insights.",
       },
       {
-        id: "what-is-baseline-model",
-        question: "What is a baseline model?",
+        id: "what-metrics-are-available",
+        question: "What metrics can Lambda measure?",
         answer:
-          "A baseline model is a reference point for comparison, typically a simpler or production version of your model. Lambda allows you to compare new model versions against baselines to measure improvements, regressions, and performance changes across dimensions.",
+          "Lambda measures comprehensive metrics including accuracy, precision, recall, F1-score, balanced accuracy, ROC-AUC, latency, throughput, hallucination rates, confidence calibration, bias indicators, semantic similarity, factual consistency, and many more. We provide both standard ML metrics and AI-specific measures for evaluating model behavior, safety, and business impact.",
+      },
+      {
+        id: "what-is-baseline-comparison",
+        question: "What is baseline comparison?",
+        answer:
+          "Baseline comparison involves benchmarking your AI model against a reference point, typically a production version, simpler model, or industry standard. Lambda enables you to set baselines and track how new model versions perform relative to them, helping you measure improvements, identify regressions, and make data-driven decisions about model updates.",
       },
       {
         id: "how-is-bias-detected",
-        question: "How does Lambda detect bias?",
+        question: "How does Lambda detect bias in AI systems?",
         answer:
-          "Lambda analyzes model predictions across demographic groups and data segments to identify systematic performance differences. Our bias detection framework measures disparities in accuracy, false positive rates, and confidence scores across protected attributes and user segments.",
+          "Lambda analyzes model predictions across demographic groups, user segments, and data slices to identify systematic performance differences. Our bias detection framework measures disparities in accuracy, false positive/negative rates, and confidence scores across protected attributes. We surface actionable insights to help you understand and mitigate fairness issues.",
       },
       {
-        id: "what-is-confidence-score",
-        question: "What is a confidence score?",
+        id: "what-is-model-drift",
+        question: "What is model drift and how does Lambda detect it?",
         answer:
-          "A confidence score indicates how certain a model is about its prediction. Lambda tracks confidence scores to identify cases where models should defer to human review, and analyzes the relationship between confidence and actual accuracy to validate model calibration.",
-      },
-      {
-        id: "how-often-should-i-evaluate",
-        question: "How often should I evaluate my models?",
-        answer:
-          "Continuous evaluation is recommended to detect model drift and performance degradation over time. Lambda supports setting up automated evaluation schedules to monitor production models regularly, from daily checks to weekly or monthly comprehensive assessments based on your needs.",
+          "Model drift is performance degradation over time due to changing data distributions or evolving relationships in your environment. Lambda detects drift by continuously monitoring production model performance, comparing it against historical baselines and alert thresholds. Early detection enables proactive retraining before performance significantly impacts users.",
       },
     ],
   },
@@ -79,33 +79,33 @@ const faqCategories = [
     questions: [
       {
         id: "how-do-i-create-test-cases",
-        question: "How do I create test cases?",
+        question: "How do I create and manage test cases in Lambda?",
         answer:
-          "Lambda allows you to create test cases by defining input-output pairs representing expected model behavior. You can upload CSV files, use our UI to create individual cases, or import test sets. Each test case includes inputs, expected outputs, and optional metadata for categorization.",
+          "Lambda offers flexible test case creation: 1) Upload CSV or JSON files with your test data, 2) Use our intuitive UI builder to create individual cases, 3) Import existing test sets from your organization. Each test case includes inputs, expected outputs, metadata for categorization, and optional tags for filtering and analysis.",
       },
       {
-        id: "what-is-benchmark-dataset",
-        question: "What is a benchmark dataset?",
+        id: "what-is-test-dataset",
+        question: "What is a test dataset and how should I structure it?",
         answer:
-          "A benchmark dataset is a standardized set of test cases used for consistent evaluation across different models or time periods. Lambda enables you to create and maintain benchmark datasets that ensure reproducible results and fair comparisons between model versions.",
+          "A test dataset is a collection of test cases representing real-world scenarios your AI system should handle. Good test datasets include: normal operation cases (80%), edge cases (15%), and adversarial inputs (5%). Lambda supports various formats and enables you to organize tests by category, difficulty level, and business domain for comprehensive coverage.",
       },
       {
-        id: "how-is-data-stored-and-secured",
-        question: "How is my data stored and secured?",
+        id: "how-is-data-secured",
+        question: "How does Lambda handle data security and privacy?",
         answer:
-          "Lambda uses enterprise-grade encryption for data storage and transmission. All evaluation data is stored securely in our infrastructure with access controls and compliance with major data privacy regulations. We provide detailed documentation on our security practices and compliance certifications.",
+          "Lambda employs enterprise-grade security: end-to-end encryption for data in transit and at rest, strict access controls, comprehensive audit logging, and compliance with GDPR, SOC 2, and other regulations. All your evaluation data remains under your control with configurable retention policies and options for on-premise deployment for sensitive workloads.",
       },
       {
-        id: "can-i-use-my-own-test-data",
-        question: "Can I use my own test data?",
+        id: "can-i-import-my-data",
+        question: "Can I import my own test data and ground truth?",
         answer:
-          "Yes, you can upload your own test data sets to Lambda. We support various formats including CSV, JSON, and parquet files. All data remains under your control, and you can configure data retention policies to meet your organizational requirements.",
+          "Yes, Lambda enables seamless data import. We support CSV, JSON, Parquet, and Excel formats. You can upload your own test data, ground truth labels, and metadata. We also provide APIs for programmatic data ingestion, sample-balanced dataset construction, and integration with your existing data pipelines and storage systems.",
       },
       {
         id: "what-is-ground-truth",
-        question: "What is ground truth?",
+        question: "What is ground truth and why is it important?",
         answer:
-          "Ground truth is the actual, verified correct answer used for evaluation. In Lambda, ground truth labels are compared against model predictions to calculate accuracy metrics. We support both automated ground truth verification and human annotation workflows for complex cases.",
+          "Ground truth represents the actual, verified correct answers or labels used to evaluate model predictions. It's critical for calculating meaningful metrics. Lambda supports both automated ground truth verification (for deterministic problems) and human annotation workflows (for subjective judgments), with built-in mechanisms for resolver workflows when annotators disagree.",
       },
     ],
   },
@@ -115,33 +115,33 @@ const faqCategories = [
     questions: [
       {
         id: "what-is-structured-testing",
-        question: "What is structured testing?",
+        question: "What is structured testing for AI systems?",
         answer:
-          "Structured testing is a methodical approach using predefined test cases, clear criteria, and measurable metrics instead of ad-hoc reviews. Lambda implements structured testing by organizing tests into categories, tracking results over time, and generating comprehensive quality reports.",
+          "Structured testing is a rigorous, methodical approach using organized test cases, clear success criteria, and measurable metrics instead of ad-hoc manual testing. Lambda implements structured testing by organizing tests into logical categories, maintaining consistent evaluation criteria, tracking historical results, and generating reproducible quality assessments.",
       },
       {
         id: "what-is-regression-testing",
-        question: "What is regression testing?",
+        question: "How does regression testing work in Lambda?",
         answer:
-          "Regression testing ensures that new model updates don't negatively impact previously validated functionality. Lambda enables you to compare new model versions against past versions across the same test cases to detect any performance regressions or unexpected behavior changes.",
+          "Regression testing ensures new model updates don't degrade previously validated functionality. Lambda enables you to compare new model versions against historical versions using the same test cases, identifying any performance regressions, unexpected behavior changes, or quality issues before deployment to production.",
       },
       {
         id: "what-is-human-in-the-loop",
         question: "What is human-in-the-loop evaluation?",
         answer:
-          "Human-in-the-loop combines automated evaluation with human review and feedback. Lambda enables this by flagging uncertain predictions, allowing expert review of edge cases, and incorporating human feedback to validate and improve evaluation criteria and model behavior.",
+          "Human-in-the-loop combines automated evaluation with human expertise. Lambda enables this by automatically flagging uncertain predictions, edge cases, and potential issues for expert review. Humans validate automated findings, provide feedback to improve evaluation criteria, and make final decisions on model quality—ensuring the best of both automation and human judgment.",
       },
       {
-        id: "how-does-lambda-measure-hallucination",
-        question: "How does Lambda measure hallucinations?",
+        id: "how-does-lambda-handle-hallucinations",
+        question: "How does Lambda help detect hallucinations in LLMs?",
         answer:
-          "Lambda includes tests and metrics specifically designed to detect hallucinations in language models. We measure the frequency of fabricated information, confidence in incorrect outputs, and track hallucination patterns across different prompts and model temperatures.",
+          "Lambda includes specialized tests and metrics for detecting hallucinations in language models. We measure frequency of fabricated information, track confidence in incorrect outputs, analyze factual consistency, and identify hallucination patterns across different prompts, temperatures, and model configurations.",
       },
       {
         id: "what-is-threshold-optimization",
         question: "What is threshold optimization?",
         answer:
-          "Threshold optimization finds the best decision boundary for a model's predictions to balance precision and recall based on business needs. Lambda helps you experiment with different thresholds and visualize trade-offs to find the optimal setting for your use case.",
+          "Threshold optimization finds the optimal decision boundary for your model to balance competing business metrics like precision and recall. Lambda helps you experiment with different thresholds, visualize precision-recall trade-offs, and identify the optimal threshold for your specific use case and business requirements.",
       },
     ],
   },
@@ -151,33 +151,33 @@ const faqCategories = [
     questions: [
       {
         id: "what-is-continuous-evaluation",
-        question: "What is continuous evaluation?",
+        question: "What is continuous evaluation in Lambda?",
         answer:
-          "Continuous evaluation is ongoing testing of AI systems in production to monitor performance degradation and ensure models maintain quality standards over time. Lambda enables automated monitoring with alerts for performance drops, enabling proactive model updates.",
+          "Continuous evaluation is ongoing systematic testing of AI systems in production to monitor performance degradation, detect drift, and ensure models maintain quality standards over time. Lambda enables automated evaluation schedules with configurable frequency (daily, weekly, monthly), performance-based alerting, and proactive model update recommendations.",
       },
       {
         id: "what-is-data-drift",
-        question: "What is data drift?",
+        question: "What is data drift and how is it detected?",
         answer:
-          "Data drift occurs when the distribution of input data changes over time, causing models trained on different data to perform less effectively. Lambda detects data drift by analyzing input patterns and alerts you when drift is detected so you can retrain or adjust your models.",
+          "Data drift occurs when the distribution of input data changes over time, causing models trained on different data to perform less effectively. Lambda detects data drift by analyzing input feature distributions, identifying statistically significant changes, and alerting you when drift thresholds are exceeded so you can trigger retraining.",
       },
       {
-        id: "what-is-model-drift",
-        question: "What is model drift?",
+        id: "what-is-model-drift-production",
+        question: "How does Lambda detect model drift in production?",
         answer:
-          "Model drift is performance degradation over time due to data changes or evolving relationships between variables. Lambda continuously monitors production models for drift and helps you identify when retraining is needed to restore performance to acceptable levels.",
+          "Model drift is performance degradation over time due to data changes or evolving relationships. Lambda continuously monitors production models by comparing current performance against historical baselines, identifying performance drops across key metrics, and enabling rapid response through alerts and recommendations for model retraining.",
       },
       {
         id: "how-do-i-set-up-alerts",
-        question: "How do I set up monitoring alerts?",
+        question: "How do I configure monitoring alerts and notifications?",
         answer:
-          "Lambda allows you to configure alerts for key metrics like accuracy drops, increased false positive rates, or detected anomalies. You can set thresholds and notification preferences to ensure your team is immediately notified when models require attention.",
+          "Lambda allows you to configure alerts for key metrics like accuracy drops, increased error rates, or detected anomalies. Set custom thresholds for each metric, choose notification channels (email, Slack, webhooks), and define alert frequency. Enterprise users can integrate with their monitoring infrastructure and incident management systems.",
       },
       {
-        id: "can-i-integrate-with-my-systems",
-        question: "Can I integrate Lambda with my existing systems?",
+        id: "can-i-integrate-with-my-infrastructure",
+        question: "Can I integrate Lambda with my ML infrastructure?",
         answer:
-          "Yes, Lambda provides APIs and webhooks for integration with your ML pipelines, monitoring systems, and applications. You can automate evaluation workflows, export results to data warehouses, and trigger model retraining based on Lambda metrics and alerts.",
+          "Yes, Lambda provides comprehensive integration capabilities: REST APIs and SDKs for multiple languages, webhooks for event-driven workflows, data export to data warehouses, integration with CI/CD pipelines for automated model validation, and connections to monitoring and observability platforms for end-to-end visibility.",
       },
     ],
   },
@@ -187,33 +187,33 @@ const faqCategories = [
     questions: [
       {
         id: "what-formats-does-lambda-support",
-        question: "What data formats does Lambda support?",
+        question: "What data formats and APIs does Lambda support?",
         answer:
-          "Lambda supports CSV, JSON, Parquet, and Excel files for test data and results. Our API accepts data in multiple formats, and we provide documentation and SDKs for popular programming languages like Python, JavaScript, and Go.",
+          "Lambda supports CSV, JSON, Parquet, and Excel files for test data. Our REST APIs accept multiple formats and provide comprehensive webhooks. We offer official SDKs for Python, JavaScript/TypeScript, Go, and Java with full type hints, documentation, and code examples.",
       },
       {
         id: "how-do-i-get-started-with-the-api",
-        question: "How do I get started with the Lambda API?",
+        question: "How do I get started with Lambda's API?",
         answer:
-          "Our API documentation is available at lambda.dev/docs with comprehensive guides, code examples, and interactive endpoints. You can generate API keys from your account settings and start making authenticated requests to integrate Lambda into your workflows.",
+          "Visit lambda.dev/docs for comprehensive API documentation, interactive endpoints, and code examples for all supported languages. Generate API keys from your account settings and start making authenticated requests. Our API enables full programmatic control over evaluation workflows, test case management, and result retrieval.",
       },
       {
         id: "is-there-a-python-sdk",
-        question: "Is there a Python SDK?",
+        question: "What SDKs are available?",
         answer:
-          "Yes, Lambda provides an official Python SDK available on PyPI. Install it via pip and use it to programmatically create test cases, run evaluations, and retrieve results. The SDK includes type hints and comprehensive documentation.",
+          "Lambda provides official SDKs for Python (pip installable), JavaScript/TypeScript (npm), Go, and Java. Each SDK includes type hints, comprehensive documentation, and examples. Community SDKs for additional languages are available. All SDKs support the full Lambda API surface and enable seamless integration into your workflows.",
       },
       {
         id: "how-long-do-evaluations-take",
         question: "How long do evaluations take?",
         answer:
-          "Evaluation time depends on model size, test case count, and your infrastructure. Lambda is optimized for performance and typically completes hundreds of test cases in seconds to minutes. Enterprise plans include parallelization for faster large-scale evaluations.",
+          "Evaluation time depends on model size, test case count, and infrastructure. Lambda is optimized for performance and typically completes hundreds of test cases in seconds to minutes. Enterprise plans include parallelization and distributed evaluation for large-scale assessments. API rate limits and pricing tiers accommodate different scale requirements.",
       },
       {
         id: "where-can-i-get-support",
-        question: "Where can I get support?",
+        question: "What support and resources are available?",
         answer:
-          "Support is available through our documentation, email support for all plans, and priority support for enterprise customers. We maintain an active community forum for discussions, and enterprise customers have access to dedicated support engineers.",
+          "Lambda provides comprehensive support: detailed documentation and guides at lambda.dev, community forums for discussions, email support for all plans, priority support for enterprise customers, and dedicated support engineers for critical deployments. We also maintain blog resources covering best practices and case studies.",
       },
     ],
   },
@@ -223,33 +223,33 @@ const faqCategories = [
     questions: [
       {
         id: "best-practices-test-design",
-        question: "What are best practices for test design?",
+        question: "What are best practices for designing test cases?",
         answer:
-          "Create diverse test cases covering normal operation, edge cases, and adversarial inputs. Organize tests by category for better insights. Use representative data that matches real-world distribution. Document test case rationale. Regularly review and update tests as new issues are discovered.",
+          "Create diverse test cases covering normal operation (80%), edge cases (15%), and adversarial inputs (5%). Organize tests by category and difficulty. Use representative data matching real-world distributions. Document test case rationale including why each test matters. Regularly review and update tests as you discover new issues or requirements change.",
       },
       {
         id: "best-practices-metrics",
-        question: "Which metrics should I prioritize?",
+        question: "Which metrics should I prioritize monitoring?",
         answer:
-          "Start with business-relevant metrics aligned with your use case requirements. For classification, track precision and recall. For language models, measure accuracy and hallucination rates. Always monitor latency for performance-sensitive applications. Track both aggregate metrics and segment-specific performance.",
+          "Start with business-aligned metrics matching your use case. For classification models, prioritize accuracy and F1-score. For LLMs, monitor accuracy, hallucination rates, and factual consistency. Always track latency for performance-sensitive applications. Analyze segment-specific performance alongside aggregate metrics to catch fairness issues early.",
       },
       {
         id: "best-practices-documentation",
         question: "How should I document my evaluation process?",
         answer:
-          "Document your test strategy, metric definitions, thresholds, and decision criteria. Record baseline performance and maintain evaluation history. Clearly note any assumptions or limitations. This documentation ensures consistency, enables knowledge transfer, and helps justify model performance decisions.",
+          "Document your test strategy, metric definitions, success thresholds, and decision criteria. Maintain evaluation history and baseline records. Clearly note assumptions, limitations, and edge cases. This documentation ensures consistency across teams, enables knowledge transfer, and provides justification for model deployment decisions.",
       },
       {
         id: "best-practices-frequency",
-        question: "How frequently should I re-evaluate?",
+        question: "How frequently should I evaluate models?",
         answer:
-          "Production models should be evaluated continuously or at minimum weekly. Re-evaluate after any model update, significant data changes, or when performance issues are reported. New models should undergo comprehensive evaluation before deployment. Set up automated monitoring for early drift detection.",
+          "Production models should be evaluated continuously or at minimum weekly. Re-evaluate after any model update, significant data changes, or when performance issues are reported. New models should undergo comprehensive evaluation before deployment. Set up automated monitoring for early drift detection and performance degradation alerts.",
       },
       {
         id: "best-practices-collaboration",
-        question: "How should teams collaborate on evaluation?",
+        question: "How should teams collaborate on AI evaluation?",
         answer:
-          "Use Lambda's workspace features to share evaluations across team members. Document decisions and findings in evaluation reports. Involve domain experts in test case creation and threshold setting. Use version control for test cases and track changes over time. Regular reviews help maintain evaluation quality.",
+          "Use Lambda's workspace features to share evaluations and collaborate across teams. Document decisions and findings in shared evaluation reports. Involve domain experts in test case creation and threshold setting. Use version control for test cases and track historical changes. Regular cross-functional reviews ensure evaluation quality and shared ownership of model quality.",
       },
     ],
   },
@@ -288,9 +288,9 @@ export default function FAQsPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-                Find answers to common questions about Lambda, our evaluation
-                features, testing methodology, and how to get the most out of
-                our platform.
+                Find answers to common questions about Lambda, our AI evaluation
+                framework, testing methodologies, continuous monitoring, and how
+                to maximize the value of our platform.
               </p>
             </div>
           </div>

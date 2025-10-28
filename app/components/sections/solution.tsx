@@ -53,8 +53,8 @@ export function SolutionSection() {
                       Run a Node
                     </h3>
                     <p className="info-card_text text-size-xsmall">
-                      Run arxOS to become a 'core' of Lambda's computing power
-                      to unlock the internet's full potential.
+                      Run Lambda CXE to become a 'core' of Lambda's computing
+                      power to unlock the internet's full potential.
                     </p>
                   </div>
                   <div className="info-card_visuals">

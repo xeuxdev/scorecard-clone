@@ -1,215 +1,106 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
-const glossaryTerms = [
-  {
-    id: "automated-testing",
-    title: "Automated Testing",
-    content:
-      "A process where software tests run automatically without manual intervention, enabling rapid evaluation of AI systems and reducing time for testing cycles.",
-    category: "Testing",
-  },
-  {
-    id: "baseline-model",
-    title: "Baseline Model",
-    content:
-      "A reference model used for comparison to measure the performance of new or modified AI models, providing context for evaluating improvements.",
-    category: "Evaluation",
-  },
-  {
-    id: "benchmark-dataset",
-    title: "Benchmark Dataset",
-    content:
-      "A standardized dataset used to evaluate and compare the performance of different AI models, ensuring consistent and reproducible results.",
-    category: "Data",
-  },
-  {
-    id: "bias-detection",
-    title: "Bias Detection",
-    content:
-      "The process of identifying systematic errors or prejudices in AI model predictions across different demographic groups or data segments.",
-    category: "Quality Assurance",
-  },
-  {
-    id: "confidence-score",
-    title: "Confidence Score",
-    content:
-      "A metric indicating the model's certainty level in its prediction, helping identify when outputs should be trusted or reviewed further.",
-    category: "Metrics",
-  },
-  {
-    id: "continuous-evaluation",
-    title: "Continuous Evaluation",
-    content:
-      "An ongoing process of testing AI systems in production to monitor performance degradation and ensure models maintain quality standards over time.",
-    category: "Monitoring",
-  },
-  {
-    id: "data-drift",
-    title: "Data Drift",
-    content:
-      "A change in the distribution or characteristics of input data over time, which can cause previously trained models to perform less effectively.",
-    category: "Monitoring",
-  },
-  {
-    id: "false-negative",
-    title: "False Negative",
-    content:
-      "A prediction error where the model incorrectly identifies a positive case as negative, often critical in high-stakes applications.",
-    category: "Metrics",
-  },
-  {
-    id: "false-positive",
-    title: "False Positive",
-    content:
-      "A prediction error where the model incorrectly identifies a negative case as positive, impacting the reliability of decisions.",
-    category: "Metrics",
-  },
-  {
-    id: "feature-importance",
-    title: "Feature Importance",
-    content:
-      "A measure of how much each input feature contributes to a model's predictions, helping understand model behavior and decision-making.",
-    category: "Evaluation",
-  },
-  {
-    id: "ground-truth",
-    title: "Ground Truth",
-    content:
-      "The actual, verified correct answer or label used for training and evaluating AI models, ensuring accurate assessment of model performance.",
-    category: "Data",
-  },
-  {
-    id: "hallucination",
-    title: "Hallucination",
-    content:
-      "When AI models generate confident but incorrect or fabricated information, a critical issue in language models and generative AI systems.",
-    category: "Quality Assurance",
-  },
-  {
-    id: "human-in-the-loop",
-    title: "Human-in-the-Loop",
-    content:
-      "A testing approach combining automated evaluation with human review to ensure AI systems produce outputs that align with human expectations and values.",
-    category: "Testing",
-  },
-  {
-    id: "latency",
-    title: "Latency",
-    content:
-      "The time delay between providing input to an AI model and receiving its output, critical for real-time applications and user experience.",
-    category: "Performance",
-  },
-  {
-    id: "machine-learning",
-    title: "Machine Learning (ML)",
-    content:
-      "A subset of artificial intelligence where systems learn patterns from data without being explicitly programmed for every scenario.",
-    category: "Core Concepts",
-  },
-  {
-    id: "model-drift",
-    title: "Model Drift",
-    content:
-      "A degradation in model performance over time due to changes in data distribution or relationships between variables after deployment.",
-    category: "Monitoring",
-  },
-  {
-    id: "precision",
-    title: "Precision",
-    content:
-      "A metric measuring the accuracy of positive predictions, calculated as the ratio of true positives to all predicted positives.",
-    category: "Metrics",
-  },
-  {
-    id: "prompt-engineering",
-    title: "Prompt Engineering",
-    content:
-      "The art of crafting inputs to language models to elicit accurate and relevant outputs, crucial for optimizing AI performance.",
-    category: "Techniques",
-  },
-  {
-    id: "recall",
-    title: "Recall",
-    content:
-      "A metric measuring the percentage of actual positive cases that the model correctly identifies, important for avoiding false negatives.",
-    category: "Metrics",
-  },
-  {
-    id: "regression-test",
-    title: "Regression Test",
-    content:
-      "A test ensuring that new changes or updates to an AI model do not negatively affect previously validated functionality.",
-    category: "Testing",
-  },
-  {
-    id: "roi-measurement",
-    title: "ROI Measurement",
-    content:
-      "Quantifying the return on investment from AI implementations, including cost savings, efficiency gains, and quality improvements.",
-    category: "Business",
-  },
-  {
-    id: "scorecard",
-    title: "Scorecard",
-    content:
-      "A comprehensive evaluation framework that tracks multiple metrics and KPIs to assess AI system performance across different dimensions.",
-    category: "Evaluation",
-  },
-  {
-    id: "semantic-drift",
-    title: "Semantic Drift",
-    content:
-      "Changes in the meaning or interpretation of data over time, which can cause models trained on older data to become less relevant.",
-    category: "Monitoring",
-  },
-  {
-    id: "structured-testing",
-    title: "Structured Testing",
-    content:
-      "A methodical approach to evaluating AI systems using predefined test cases, criteria, and metrics instead of ad-hoc reviews.",
-    category: "Testing",
-  },
-  {
-    id: "test-case",
-    title: "Test Case",
-    content:
-      "A specific input-output pair used to evaluate whether an AI model produces the expected result under defined conditions.",
-    category: "Testing",
-  },
-  {
-    id: "threshold-optimization",
-    title: "Threshold Optimization",
-    content:
-      "The process of finding the optimal decision boundary for a model's predictions to balance precision and recall based on business requirements.",
-    category: "Techniques",
-  },
-  {
-    id: "true-negative",
-    title: "True Negative",
-    content:
-      "A correct prediction where the model accurately identifies a negative case, indicating proper model calibration.",
-    category: "Metrics",
-  },
-  {
-    id: "true-positive",
-    title: "True Positive",
-    content:
-      "A correct prediction where the model accurately identifies a positive case, demonstrating model effectiveness.",
-    category: "Metrics",
-  },
-  {
-    id: "validation-set",
-    title: "Validation Set",
-    content:
-      "A subset of data used during model development to evaluate performance and tune hyperparameters, separate from training data.",
-    category: "Data",
-  },
-];
+// Parse glossary content from markdown format
+const parseGlossaryContent = () => {
+  const content = `ABE (Attribute-Based Encryption)|A form of public-key encryption where ciphertext and private keys are based on attributes. Used in Lambda for conditional access policies to encrypted data.|Cryptography
+AES-256-GCM (Advanced Encryption Standard - Galois/Counter Mode)|Symmetric encryption standard with 256-bit keys providing confidentiality and authentication. Lambda achieves 1GB/s throughput with this encryption method.|Cryptography
+AMD SEV (Secure Encrypted Virtualization)|AMD's technology for full virtual machine memory encryption, used in Lambda's Trusted Execution Environment infrastructure.|Infrastructure
+Arithmetization|The process of converting logic gates into arithmetic circuits over finite fields (BN254/BLS12-381), essential for zero-knowledge proof generation.|Zero-Knowledge Proofs
+Beaver Triples|Pre-computed values used in Multi-Party Computation protocols for efficient multiplication operations without revealing secret values.|MPC
+BFT (Byzantine Fault Tolerance)|Ability to tolerate f < n/3 malicious nodes in a distributed system. Lambda uses PBFT/Tendermint consensus with 3-second block times.|Consensus
+BGW (Ben-Or, Goldwasser, and Wigderson)|An information-theoretic secure MPC protocol used in Lambda's compute engine.|MPC
+BLS12-381|An elliptic curve used for pairing-based cryptography, threshold signatures, and zero-knowledge proofs. Provides efficient aggregate attestations.|Cryptography
+BN254|An elliptic curve optimized for pairing operations, commonly used in zkSNARK verification on Ethereum.|Cryptography
+Bulletproofs|A zero-knowledge proof protocol for range proofs with O(log n) size. Lambda uses 672-byte proofs for 64-bit ranges with 10ms proving time.|Zero-Knowledge Proofs
+Cairo|A domain-specific language for writing circuits that can be compiled into zero-knowledge proofs.|Languages
+Circom|A circuit compiler language for creating arithmetic circuits used in zkSNARK generation.|Languages
+Cipher Framework|Lambda's Rust-based domain-specific language (DSL) for writing confidential smart contracts with familiar syntax.|Framework
+CXE (Confidential Execution Environment)|Isolated computation environments where encrypted data is processed securely using TEEs and MPC protocols. Lambda's core privacy infrastructure.|Infrastructure
+dApps (Decentralized Applications)|Blockchain-based applications that Lambda enables to be privacy-preserving through SDK integration.|Applications
+Dark Pools|Private trading venues where transactions are executed without revealing positions or strategies, a key use case for Lambda.|Use Cases
+DCAP (Data Center Attestation Primitives)|Intel's protocol for remote attestation used to verify code integrity in SGX enclaves.|Attestation
+DeFi (Decentralized Finance)|Financial applications on blockchain that Lambda enables with privacy features like confidential trading and lending.|Applications
+ECDSA (Elliptic Curve Digital Signature Algorithm)|Digital signature scheme using secp256k1 curve for signing key material. Lambda uses threshold ECDSA for MPC key sharing.|Cryptography
+EdDSA (Edwards-curve Digital Signature Algorithm)|Modern elliptic curve signature scheme used for signing encryption key material in Lambda.|Cryptography
+EIP-1559|Ethereum Improvement Proposal for transaction fee mechanism used in Lambda's blockchain submissions.|Ethereum
+EIP-4844|Ethereum's blob transactions used in Lambda's Layer 2 rollup batched updates for cost efficiency ($0.01 per update).|Ethereum
+FHE (Fully Homomorphic Encryption)|Encryption allowing computations on ciphertext without decryption. Lambda uses TFHE-rs with 128-bit security for arithmetic operations.|Encryption
+Fiat-Shamir Transform|Cryptographic technique converting interactive protocols to non-interactive ones, used in Lambda's ZK proof generation.|Zero-Knowledge Proofs
+FIPS 140-2|Federal security standard for cryptographic modules. Lambda uses FIPS-certified hardware RNG for entropy generation.|Standards
+Garbled Circuits|A cryptographic protocol for secure two-party computation used in Lambda's MPC coordinator.|MPC
+Groth16|Fast zkSNARK protocol producing ~200-300 byte constant-size proofs. Lambda achieves 0.5-2s proving time with 240K-350K gas verification cost.|Zero-Knowledge Proofs
+HKDF (HMAC-based Key Derivation Function)|Cryptographic key derivation: master key → application keys → data-specific keys. Used throughout Lambda's encryption pipeline.|Cryptography
+HSM (Hardware Security Module)|Secure cryptographic hardware for key storage. Lambda supports HSM or WebCrypto API for key management.|Infrastructure
+Intel SGX (Software Guard Extensions)|Intel's Trusted Execution Environment technology providing 128MB-256GB encrypted memory enclaves for secure computation.|Infrastructure
+IPFS (InterPlanetary File System)|Decentralized storage system used by Lambda for storing encrypted state tree leaves.|Storage
+IVC (Incrementally Verifiable Computation)|Technique for proving long computations incrementally, supported by Lambda's recursive proof systems.|Zero-Knowledge Proofs
+KZG (Kate-Zaverucha-Goldberg) Commitments|Polynomial commitment scheme used in Lambda's zero-knowledge proof creation.|Cryptography
+Lambda SDK|The core developer toolkit providing high-level APIs that abstract cryptographic operations for building privacy-preserving applications.|Framework
+Lagrange Interpolation|Mathematical method for reconstructing secrets from threshold shares in MPC computations.|MPC
+MEE (Memory Encryption Engine)|Hardware component providing AES-128-GCM memory encryption in Intel SGX environments.|Infrastructure
+Merkle Root|The top hash of a Merkle tree, stored on-chain (32 bytes) while encrypted leaves remain off-chain.|Data Structures
+MessagePack|Binary serialization format used alongside Protobuf for efficient data encoding in Lambda.|Serialization
+NFTs (Non-Fungible Tokens)|Unique digital assets that Lambda enables with privacy features like sealed-bid auctions and hidden ownership.|Use Cases
+NIZK (Non-Interactive Zero-Knowledge)|Zero-knowledge proofs that don't require back-and-forth communication. Lambda generates NIZK proofs of encryption well-formedness.|Zero-Knowledge Proofs
+Noir|A domain-specific language for writing zero-knowledge circuits, supported by Lambda's proof generation system.|Languages
+Nova|A recursive zkSNARK system providing O(1) proof sizes for incrementally verifiable computation.|Zero-Knowledge Proofs
+ORAM (Oblivious RAM)|Memory access pattern hiding technique used in Lambda's CXE for side-channel resistance.|Security
+PBFT (Practical Byzantine Fault Tolerance)|Consensus protocol used in Lambda's CXE clusters for Byzantine fault tolerance.|Consensus
+PLONK|Universal setup zkSNARK with custom gates, requiring ~350K gas for verification. More flexible than Groth16.|Zero-Knowledge Proofs
+Poseidon Hash|ZK-friendly hash function that's 8x faster than SHA-256 in SNARKs, used for internal nodes in Lambda's state trees.|Cryptography
+Powers of Tau Ceremony|Trusted setup process for generating proving/verifying keys in zkSNARK systems.|Zero-Knowledge Proofs
+Protobuf (Protocol Buffers)|Binary serialization format used for efficient data encoding in Lambda's SDK.|Serialization
+R1CS (Rank-1 Constraint System)|Mathematical representation of computations as quadratic equations: A·w ⊙ B·w = C·w. Used in zkSNARK circuit compilation.|Zero-Knowledge Proofs
+Recursive Proofs|Proof-of-proof technique enabling scalability through nested verification, supported via Nova in Lambda.|Zero-Knowledge Proofs
+Remote Attestation|Cryptographic process to verify code integrity in TEEs using SGX quotes or AMD SEV, ensuring trusted execution.|Attestation
+Ring-LWE (Ring Learning With Errors)|Lattice-based cryptographic assumption providing security for TFHE homomorphic encryption.|Cryptography
+Sealed-Bid Auction|Auction type where bids remain private until reveal, a key privacy use case enabled by Lambda.|Use Cases
+Secret Sharing|Cryptographic technique splitting data into shares where threshold t out of n shares can reconstruct the original. Lambda uses additive shares over finite fields.|Cryptography
+secp256k1|Elliptic curve used in ECDSA signatures, particularly common in blockchain applications.|Cryptography
+Semantic Security|Cryptographic property ensuring identical plaintexts produce different ciphertexts, achieved through unique nonces/IVs.|Cryptography
+SGX (Software Guard Extensions)|See Intel SGX.|Infrastructure
+SHA-256 (Secure Hash Algorithm 256-bit)|Cryptographic hash function used for key commitment hashes and Merkle roots in Lambda.|Cryptography
+Shamir's Secret Sharing|(t, n)-threshold cryptographic scheme where t = ⌈2n/3⌉ shares can reconstruct a secret. Used in Lambda's CXE security.|Cryptography
+Soundness|Zero-knowledge proof property ensuring false statements cannot be proven. Lambda achieves 2⁻¹²⁸ forgery probability.|Zero-Knowledge Proofs
+Sparse Merkle Tree|Binary tree structure with 256 levels supporting 2²⁵⁶ possible keys, used for Lambda's private state management.|Data Structures
+SPDZ|Malicious-secure Multi-Party Computation protocol used in Lambda's compute engine.|MPC
+STARKs (Scalable Transparent Arguments of Knowledge)|Zero-knowledge proofs without trusted setup, post-quantum secure, producing 50-200KB proofs. Supported by Lambda.|Zero-Knowledge Proofs
+TEE (Trusted Execution Environment)|Secure hardware enclave providing isolated computation. Lambda uses Intel SGX and AMD SEV for confidential execution.|Infrastructure
+Tendermint|Byzantine fault tolerant consensus protocol used in Lambda's CXE clusters.|Consensus
+TFHE (Torus Fully Homomorphic Encryption)|FHE scheme supporting unlimited computation depth through bootstrapping. Lambda uses TFHE-rs with 128-bit security.|Encryption
+Threshold Cryptography|Cryptographic systems requiring cooperation of t out of n parties. Lambda uses threshold encryption with t = ⌈n/2⌉+1.|Cryptography
+TLS 1.3 (Transport Layer Security)|Modern encrypted communication protocol ensuring secure channels between CXE nodes with 1-10 MB/s bandwidth.|Security
+Trusted Setup|Ceremony generating proving/verifying keys for certain zkSNARK systems like Groth16. PLONK has universal setup; STARKs require none.|Zero-Knowledge Proofs
+TypeScript SDK|Lambda's primary SDK providing complete API documentation and client libraries for seamless blockchain integration.|Framework
+WASM (WebAssembly)|Bytecode format used to package confidential computations for CXE deployment.|Serialization
+WebCrypto API|Browser-based cryptographic API supported by Lambda for key storage as an alternative to HSM.|Infrastructure
+Witness|Private inputs assigned to constraint variables in zero-knowledge proofs, satisfying the R1CS equations.|Zero-Knowledge Proofs
+Zero-Knowledge Proofs (ZK Proofs)|Cryptographic protocols proving statements about private data without revealing the data itself. Core to Lambda's privacy architecture.|Zero-Knowledge Proofs
+zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)|Compact zero-knowledge proofs with constant size (~200-300 bytes) and fast verification. Lambda supports Groth16 and PLONK variants.|Zero-Knowledge Proofs
+zk-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)|Zero-knowledge proofs without trusted setup, larger than SNARKs but transparent and post-quantum secure.|Zero-Knowledge Proofs`;
+
+  return content
+    .split("\n")
+    .filter((line) => line.trim())
+    .map((line) => {
+      const [title, contentText, category] = line.split("|");
+      return {
+        id: title
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-|-$/g, ""),
+        title: title.trim(),
+        content: contentText.trim(),
+        category: category.trim(),
+      };
+    });
+};
+
+const glossaryTerms = parseGlossaryContent();
 
 export default function GlossaryPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [expandedCards, setExpandedCards] = useState<string[]>([]);
 
   // Get unique categories
   const categories = [
@@ -226,12 +117,6 @@ export default function GlossaryPage() {
       selectedCategory === "All" || term.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
-
-  const toggleCard = (id: string) => {
-    setExpandedCards((prev) =>
-      prev.includes(id) ? prev.filter((cardId) => cardId !== id) : [...prev, id]
-    );
-  };
 
   // Get category color - matching the website's design system
   const getCategoryColor = (category: string) => {
@@ -332,8 +217,7 @@ export default function GlossaryPage() {
               {filteredTerms.map((term) => (
                 <div
                   key={term.id}
-                  className="bg-white border border-gray-200 rounded-xl p-6 cursor-pointer transition-all duration-300 flex flex-col hover:shadow-lg hover:border-gray-300 hover:-translate-y-0.5 space-y-5"
-                  onClick={() => toggleCard(term.id)}
+                  className="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 flex flex-col hover:shadow-lg hover:border-gray-300 hover:-translate-y-0.5 space-y-5"
                 >
                   {/* Category Badge */}
                   <div>

@@ -20,8 +20,9 @@ export function Footer() {
                   <img src="/logo.png" alt="" className="footer_logo-svg" />
                 </a>
                 <p className="footer_text heading-style-h5 max-30ch">
-                  We help teams build reliable AI with seamless testing,
-                  evaluation, and optimization.
+                  We help teams build confidential blockchain applications with
+                  seamless encryption, zero-knowledge proofs, and privacy
+                  optimization.
                 </p>
               </div>
               <div className="footer_main-content-block">
@@ -205,21 +206,13 @@ export function Footer() {
               <div className="footer_git-link-wrapper">
                 <a
                   aria-label="Visit our Github"
-                  href="https://github.com/scorecard-ai"
+                  href="https://github.com/lambda-protocol"
                   target="_blank"
                   className="footer_primary-link"
                 >
                   GITHUB
                 </a>
               </div>
-              <a
-                aria-label="Go to our LinkedIn profile"
-                href="https://www.linkedin.com/company/scorecard-ai/"
-                target="_blank"
-                className="footer_primary-link"
-              >
-                Linkedin
-              </a>
             </div>
             <div className="footer_secondary-content">
               <a

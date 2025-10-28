@@ -1,64 +1,180 @@
 import { useState } from "react";
 import { Footer } from "~/components/sections/footer";
+import {
+  FiChevronDown,
+  FiChevronRight,
+  FiHome,
+  FiBookOpen,
+  FiFileText,
+  FiKey,
+  FiCode,
+} from "react-icons/fi";
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiFlutter,
+  SiUnity,
+  SiKotlin,
+} from "react-icons/si";
 
 export const meta = () => [
-  { title: "Whitepaper | Scorecard" },
+  { title: "Whitepaper | Lambda" },
   {
     name: "description",
     content:
-      "Read our comprehensive whitepaper on AI evaluation, testing, and continuous improvement",
+      "Read our comprehensive whitepaper on confidential blockchain applications, testing, and continuous improvement",
   },
 ];
 
 interface NavItem {
   id: string;
   label: string;
+  icon?: React.ReactNode;
   children?: NavItem[];
+  href?: string;
 }
 
-const navigationItems: NavItem[] = [
+interface NavigationSection {
+  section?: string;
+  items?: NavItem[];
+  href?: string;
+  icon?: React.ReactNode;
+  matches?: boolean;
+}
+
+const navigationSections: NavigationSection[] = [
   {
-    id: "overview",
-    label: "Overview",
-    children: [
-      { id: "executive-summary", label: "Executive Summary" },
-      { id: "introduction", label: "Introduction" },
-      { id: "problem-statement", label: "Problem Statement" },
+    section: "Overview",
+    items: [
+      {
+        id: "home",
+        label: "Home",
+        icon: <FiHome className="w-4 h-4" />,
+        href: "/resources/overview",
+      },
+      {
+        id: "concepts",
+        label: "Concepts",
+        icon: <FiBookOpen className="w-4 h-4" />,
+        href: "/resources/concepts",
+      },
+      {
+        id: "framework",
+        label: "Framework",
+        icon: <FiBookOpen className="w-4 h-4" />,
+        children: [
+          { id: "methodology", label: "Methodology" },
+          { id: "architecture", label: "Architecture" },
+          { id: "evaluation-metrics", label: "Evaluation Metrics" },
+        ],
+      },
+    ],
+  },
+
+  {
+    section: "APIs",
+    items: [
+      {
+        id: "api-key",
+        label: "Get an API key",
+        icon: <FiKey className="w-4 h-4" />,
+        href: "/resources/api-key",
+      },
+      {
+        id: "api-reference",
+        label: "API Reference V2",
+        icon: <FiCode className="w-4 h-4" />,
+        children: [
+          { id: "methodology", label: "Getting Started" },
+          { id: "architecture", label: "Room & Session API" },
+          { id: "scalability", label: "Live Meetings API" },
+          { id: "security", label: "Get Metrics API" },
+          { id: "implementation", label: "Get Recordings API" },
+        ],
+      },
     ],
   },
   {
-    id: "framework",
-    label: "Framework",
-    children: [
-      { id: "methodology", label: "Methodology" },
-      { id: "architecture", label: "Architecture" },
-      { id: "evaluation-metrics", label: "Evaluation Metrics" },
-    ],
-  },
-  {
-    id: "technical",
-    label: "Technical Details",
-    children: [
-      { id: "implementation", label: "Implementation" },
-      { id: "scalability", label: "Scalability" },
-      { id: "security", label: "Security & Privacy" },
-    ],
-  },
-  {
-    id: "case-studies",
-    label: "Case Studies",
-    children: [
-      { id: "enterprise-ai", label: "Enterprise AI Deployment" },
-      { id: "llm-evaluation", label: "LLM Evaluation" },
-      { id: "real-world-results", label: "Real-World Results" },
-    ],
-  },
-  {
-    id: "conclusion",
-    label: "Conclusion",
-    children: [
-      { id: "future-work", label: "Future Work" },
-      { id: "references", label: "References" },
+    section: "SDKs",
+    items: [
+      {
+        id: "javascript-sdk",
+        label: "Javascript",
+        icon: <SiJavascript className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "reactjs-sdk",
+        label: "ReactJS",
+        icon: <SiReact className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "react-native-sdk",
+        label: "React Native",
+        icon: <SiReact className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "server-sdk",
+        label: "Server-SDK",
+        icon: <SiNodedotjs className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "flutter-sdk",
+        label: "Flutter",
+        icon: <SiFlutter className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "unity-sdk",
+        label: "Unity",
+        icon: <SiUnity className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
+      {
+        id: "kotlin-sdk",
+        label: "Kotlin",
+        icon: <SiKotlin className="w-4 h-4" />,
+        children: [
+          { id: "implementation", label: "Quickstart" },
+          { id: "evaluation-metrics", label: "Methods" },
+          { id: "scalability", label: "Walkthrough" },
+          { id: "security", label: "Start from an example" },
+        ],
+      },
     ],
   },
 ];
@@ -224,7 +340,7 @@ const whitepaperContent: Record<
     content: (
       <div className="space-y-6!">
         <p className="text-gray-700">
-          The Scorecard evaluation platform is designed with a modular, scalable
+          The Lambda evaluation platform is designed with a modular, scalable
           architecture.
         </p>
         <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
@@ -402,8 +518,8 @@ const whitepaperContent: Record<
     content: (
       <div className="space-y-6!">
         <p className="text-gray-700">
-          A leading financial services company deployed Scorecard to evaluate
-          their AI-powered trading algorithms across 50+ markets.
+          A leading financial services company deployed Lambda to evaluate their
+          AI-powered trading algorithms across 50+ markets.
         </p>
         <div className="space-y-4!">
           <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
@@ -433,7 +549,7 @@ const whitepaperContent: Record<
     content: (
       <div className="space-y-6!">
         <p className="text-gray-700">
-          A technology company used Scorecard to evaluate and improve their
+          A technology company used Lambda to evaluate and improve their
           customer service LLM across 20 languages.
         </p>
         <div className="space-y-4!">
@@ -559,6 +675,7 @@ export default function WhitepaperPage() {
     Record<string, boolean>
   >({
     overview: true,
+    framework: true,
   });
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -569,32 +686,68 @@ export default function WhitepaperPage() {
     }));
   };
 
-  const filteredNavItems = navigationItems.map((item) => {
-    const matchesSearch = item.label
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
-    const filteredChildren = item.children?.filter((child) =>
-      child.label.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    const hasMatchingChildren = filteredChildren && filteredChildren.length > 0;
+  const filteredNavSections = navigationSections
+    .map((section) => {
+      // If section has href/icon but no items, it's a standalone link
+      if (section.href && section.icon && !section.items) {
+        const matchesSearch = section.section
+          ?.toLowerCase()
+          .includes(searchQuery.toLowerCase());
+        return { ...section, items: [], matches: matchesSearch };
+      }
 
-    return {
-      ...item,
-      children: filteredChildren,
-      matches: matchesSearch || hasMatchingChildren,
-    };
-  });
+      // Otherwise, it's a section with items
+      const filteredItems = section.items
+        ?.map((item) => {
+          const matchesSearch = item.label
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase());
+          const filteredChildren = item.children?.filter((child) =>
+            child.label.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+          const hasMatchingChildren =
+            filteredChildren && filteredChildren.length > 0;
+
+          return {
+            ...item,
+            children: filteredChildren,
+            matches: matchesSearch || hasMatchingChildren,
+          };
+        })
+        .filter((item) => item.matches);
+
+      return {
+        ...section,
+        items: filteredItems,
+        matches: true,
+      };
+    })
+    .filter((section) => {
+      // Show section if it has href (standalone) or has filtered items
+      return (
+        section.matches &&
+        ((section.href && !section.items) ||
+          (section.items && section.items.length > 0))
+      );
+    });
+
+  const handleItemClick = (itemId: string) => {
+    // Only set selectedId if content exists for this item
+    if (whitepaperContent[itemId]) {
+      setSelectedId(itemId);
+    }
+  };
 
   const selectedContent =
     whitepaperContent[selectedId] || whitepaperContent["executive-summary"];
 
   return (
     <>
-      <main className="main-wrapper is-padding-start">
-        <section className="py-12">
+      <main className="main-wrapper is-padding-start min-h-screen">
+        <section className="pb-12">
           <div className="padding-global">
             {/* Header */}
-            <div className="mb-12!">
+            {/* <div className="mb-12!">
               <div className="container-xlarge">
                 <div className="mb-8! space-y-5!">
                   <h1 className="text-5xl font-bold text-gray-900 mb-3">
@@ -606,15 +759,15 @@ export default function WhitepaperPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Main Content Area */}
             <div className="container-xlarge flex gap-12">
               {/* Sidebar Navigation */}
-              <aside className="w-64 shrink-0">
+              <aside className="w-64 shrink-0 overflow-y-auto max-h-[calc(100vh-240px)]">
                 <div className="sticky top-24">
                   {/* Search */}
-                  <div className="mb-6">
+                  {/* <div className="mb-6">
                     <input
                       type="text"
                       placeholder="Search whitepaper..."
@@ -622,47 +775,108 @@ export default function WhitepaperPage() {
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent bg-white"
                     />
-                  </div>
+                  </div> */}
 
                   {/* Navigation */}
-                  <nav className="space-y-2">
-                    {filteredNavItems.map((item) =>
-                      item.matches ? (
-                        <div key={item.id}>
-                          <button
-                            onClick={() => toggleSection(item.id)}
-                            className="w-full flex items-center justify-between px-3 py-2 font-semibold text-gray-900 hover:bg-gray-100 rounded transition-colors text-sm"
+                  <nav className="space-y-6">
+                    {filteredNavSections.map((section, idx) => (
+                      <div key={section.section || `section-${idx}`}>
+                        {/* Standalone section link (Home, Concepts, etc.) */}
+                        {section.href && section.icon && (
+                          <a
+                            href={section.href}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-sm font-medium rounded transition-all duration-200 text-gray-900 hover:bg-gray-100"
                           >
-                            <span>{item.label}</span>
-                            <span
-                              className={`transition-transform duration-200 text-xs ${
-                                expandedSections[item.id] ? "rotate-180" : ""
-                              }`}
-                            >
-                              ▼
-                            </span>
-                          </button>
+                            <span className="shrink-0">{section.icon}</span>
+                            <span>{section.section}</span>
+                          </a>
+                        )}
 
-                          {expandedSections[item.id] && item.children && (
-                            <div className="ml-2 space-y-1 border-l border-gray-300">
-                              {item.children.map((child) => (
-                                <button
-                                  key={child.id}
-                                  onClick={() => setSelectedId(child.id)}
-                                  className={`w-full text-left px-3 py-2 text-sm rounded transition-colors ${
-                                    selectedId === child.id
-                                      ? "bg-blue-50 text-blue-600 font-semibold"
-                                      : "text-gray-700 hover:bg-gray-100"
-                                  }`}
-                                >
-                                  {child.label}
-                                </button>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ) : null
-                    )}
+                        {/* Section Header */}
+                        {!section.href && section.section && (
+                          <span className="px-3 py-2 text-sm font-bold text-gray-900 uppercase tracking-wide">
+                            {section.section}
+                          </span>
+                        )}
+
+                        {/* Section Items */}
+                        {section.items && section.items.length > 0 && (
+                          <div className="space-y-1">
+                            {section.items.map((item) => (
+                              <div key={item.id}>
+                                {item.children ? (
+                                  <>
+                                    <button
+                                      onClick={() => toggleSection(item.id)}
+                                      className="w-full flex items-center justify-between px-3 py-2 text-sm font-medium rounded transition-all duration-200 text-gray-900 hover:bg-gray-100"
+                                    >
+                                      <div className="flex items-center gap-2">
+                                        {item.icon && (
+                                          <span className="shrink-0">
+                                            {item.icon}
+                                          </span>
+                                        )}
+                                        <span>{item.label}</span>
+                                      </div>
+                                      {expandedSections[item.id] ? (
+                                        <FiChevronDown className="w-4 h-4 shrink-0" />
+                                      ) : (
+                                        <FiChevronRight className="w-4 h-4 shrink-0" />
+                                      )}
+                                    </button>
+
+                                    {/* Children with smooth transition */}
+                                    <div
+                                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                                        expandedSections[item.id]
+                                          ? "max-h-[500px] opacity-100"
+                                          : "max-h-0 opacity-0"
+                                      }`}
+                                    >
+                                      <div className="ml-6 space-y-0.5 mt-1 border-l-2 border-gray-200 pl-3">
+                                        {item.children.map((child) => (
+                                          <button
+                                            key={child.id}
+                                            onClick={() =>
+                                              handleItemClick(child.id)
+                                            }
+                                            className={`w-full text-left px-2 py-1.5 text-sm rounded transition-colors ${
+                                              selectedId === child.id
+                                                ? "bg-blue-50 text-blue-600 font-medium"
+                                                : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                            }`}
+                                          >
+                                            {child.label}
+                                          </button>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  </>
+                                ) : (
+                                  <button
+                                    onClick={() => handleItemClick(item.id)}
+                                    className={`w-full flex items-center gap-2 px-3 py-2 text-sm font-medium rounded transition-all duration-200 ${
+                                      selectedId === item.id
+                                        ? "bg-gray-900 text-white"
+                                        : "text-gray-900 hover:bg-gray-100"
+                                    }`}
+                                  >
+                                    {item.icon && (
+                                      <span className="shrink-0">
+                                        {item.icon}
+                                      </span>
+                                    )}
+                                    <span className="text-left">
+                                      {item.label}
+                                    </span>
+                                  </button>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
                   </nav>
                 </div>
               </aside>
