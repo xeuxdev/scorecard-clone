@@ -85,7 +85,7 @@ export default function CareersPage() {
                     className="section-heading-main_content is-careers"
                   >
                     <h2 className="section-heading-main_text heading-style-h2">
-                      We’re Helping Teams Create Reliable AI Products
+                      Build trustworthy AI that users can depend on
                     </h2>
                   </div>
                   <div
@@ -93,10 +93,11 @@ export default function CareersPage() {
                     className="section-heading-main_content text-wrap-balance"
                   >
                     <p className="section-heading-main_text text-size-medium">
-                      At Lambda, we’re passionate about empowering people to
-                      build and deliver dependable AI products. We provide the
-                      platform to support teams from prototype to production for
-                      Large Language Models (LLMs).
+                      At Lambda, we replace subjective reviews with structured
+                      testing and continuous evaluation. Our platform gives
+                      engineering and product teams the evidence and tooling
+                      they need to ship reliable LLM-driven features with
+                      confidence — from prototype to production.
                     </p>
                   </div>
                 </div>
@@ -118,7 +119,7 @@ export default function CareersPage() {
                   className="career-hero-visuals_img-1"
                 />
                 <img
-                  src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ff35f451cd5e5c328c_careers-hero-logo.svg"
+                  src="/logo.png"
                   loading="lazy"
                   alt="Lambda Logo"
                   className="career-hero-visuals_img-2"
@@ -157,7 +158,8 @@ export default function CareersPage() {
                           </div>
                         </div>
                         <h2 className="section-heading-main_text heading-style-h3">
-                          Help Us Redefine How Organizations Evaluate AI
+                          Join us to build the platform that powers reliable
+                          web3
                         </h2>
                       </div>
                       <div
@@ -165,10 +167,12 @@ export default function CareersPage() {
                         className="section-heading-main_content text-wrap-balance"
                       >
                         <p className="section-heading-main_text text-size-medium">
-                          Interested in working with us? You'll have the
-                          opportunity to join a fast-growing team, solving the
-                          most pressing problems in the AI space. We're hiring
-                          for these roles:
+                          Interested in joining? You'll work closely with folks
+                          who have built and evaluated large-scale AI systems
+                          and help teams move faster while reducing risk. We
+                          value rigorous thinking, practical delivery, and a
+                          strong focus on user trust. We're hiring for the
+                          following roles:
                         </p>
                       </div>
                     </div>
@@ -223,7 +227,7 @@ export default function CareersPage() {
                                     fs-list-field="title"
                                     className="open-role_card_text heading-style-h4"
                                   >
-                                    Founding Software Engineer
+                                    SDK Developer
                                   </h3>
                                 </div>
                                 <div className="open-role_card_info">
@@ -255,7 +259,7 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="/careers/software-engineer"
+                                href="#"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div
@@ -303,7 +307,7 @@ export default function CareersPage() {
                                     fs-list-field="title"
                                     className="open-role_card_text heading-style-h4"
                                   >
-                                    Founding UX Designer
+                                    Smart Contract Developer
                                   </h3>
                                 </div>
                                 <div className="open-role_card_info">
@@ -335,7 +339,7 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="/careers/founding-ux-designer"
+                                href="#"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div
@@ -383,7 +387,7 @@ export default function CareersPage() {
                                     fs-list-field="title"
                                     className="open-role_card_text heading-style-h4"
                                   >
-                                    Founding GTM
+                                    ZK Engineer
                                   </h3>
                                 </div>
                                 <div className="open-role_card_info">
@@ -415,7 +419,7 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="/careers/founding-gtm"
+                                href="#"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div

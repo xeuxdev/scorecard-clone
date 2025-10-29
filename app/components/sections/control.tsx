@@ -33,15 +33,15 @@ export function ControlSection() {
               <div
                 fade-in=""
                 id="w-node-_6b9235dc-8ddc-5528-a09f-0b5ce2da4318-e2da4312"
-                className="take-control_content"
+                className="take-control_content max-w-[55ch]!"
               >
                 <h2 className="take-control_text">
-                  Take Control of AI Performance
+                  Solve Your <br /> Privacy Concerns
                 </h2>
                 <div className="take-control_copy">
                   <p className="take-control_text subtitle-size-2">
                     Join forward-thinking teams using Lambda to upgrade the way
-                    they build, test, and improve AI AGENTS.
+                    they build, test, and improve ENCRYPTED APPLICATIONS.
                   </p>
                   <a
                     className="button-primary w-inline-block"

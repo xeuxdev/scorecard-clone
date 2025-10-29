@@ -129,7 +129,7 @@ export function Navbar() {
                           </ul>
                         </div>
                       </li>
-                      <li className="nav_menu-li">
+                      {/* <li className="nav_menu-li">
                         <a
                           aria-label="Go to About Us page"
                           href="/about-us"
@@ -137,7 +137,7 @@ export function Navbar() {
                         >
                           About us
                         </a>
-                      </li>
+                      </li> */}
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Careers page"
@@ -180,7 +180,7 @@ export function Navbar() {
                             className="button-primary_inner"
                           >
                             <span className="button-primary_text">
-                              read our docs
+                              get started
                             </span>
                           </span>
                         </a>

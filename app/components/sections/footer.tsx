@@ -38,9 +38,8 @@ export function Footer() {
                   >
                     <div className="form_header">
                       <div className="footer_text text-size-xsmall">
-                        Want to stay ahead in AI innovation?
-                        <br />
-                        Subscribe for insights, updates and best practices
+                        Want to stay ahead in Web3 privacy? <br /> Subscribe for
+                        insights, updates and best practices.
                       </div>
                     </div>
                     <div className="form_field-wrapper">
