@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@mjackson/node-fetch-server':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@react-router/node':
         specifier: ^7.9.2
         version: 7.9.4(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
@@ -379,6 +382,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@mjackson/node-fetch-server@0.1.0':
+    resolution: {integrity: sha512-uFkH4CXsX5dU2sh5Ib9gP2bV4t2OYQph6y7s0kSSDlQ0XnIUXwjBZktXClzQV9BivynXWishvXK3ziItpHRcpw==}
 
   '@mjackson/node-fetch-server@0.2.0':
     resolution: {integrity: sha512-EMlH1e30yzmTpGLQjlFmaDAjyOeZhng1/XCd7DExR8PNAnG/G1tyruZxEoUe11ClnwGhGrtsdnyyUx1frSzjng==}
@@ -2138,6 +2144,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@mjackson/node-fetch-server@0.1.0': {}
 
   '@mjackson/node-fetch-server@0.2.0': {}
 
