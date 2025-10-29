@@ -59,7 +59,7 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Resources page"
-                          href="/docs"
+                          href="https://scorecard-docs.vercel.app/docs"
                           target="_blank"
                           className="nav_menu-link"
                         >
