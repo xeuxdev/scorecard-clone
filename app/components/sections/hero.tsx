@@ -200,7 +200,7 @@ export function HeroSection() {
                 <div className="home-hero_button-wrap">
                   <a
                     className="button-primary w-inline-block"
-                    href=""
+                    href="https://scorecard-docs.vercel.app"
                     aria-label="read our docs"
                     role="button"
                   >

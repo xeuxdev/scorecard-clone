@@ -170,7 +170,7 @@ export function Navbar() {
                       <div className="nav_menu-button-wrapper">
                         <a
                           className="button-primary w-inline-block"
-                          href="https://app.getscorecard.ai/"
+                          href="https://scorecard-docs.vercel.app"
                           aria-label="login"
                           role="button"
                         >
