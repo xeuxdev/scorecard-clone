@@ -147,6 +147,42 @@ export function HeroSection() {
 
     let tabControllers = initTabSystem();
 
+    // Setup highlight logic using MutationObserver
+    const setupHighlightLogic = () => {
+      const highlightTrigger = document.querySelectorAll(".tab-content__item");
+      const highlightTarget = document.querySelectorAll(".data-highlight");
+
+      const observer = new MutationObserver((mutationsList) => {
+        mutationsList.forEach((mutation) => {
+          if (
+            mutation.type === "attributes" &&
+            (mutation as any).attributeName === "class"
+          ) {
+            const target = mutation.target as Element;
+            const index = Array.from(highlightTrigger).indexOf(
+              target as Element
+            );
+            if ((target as HTMLElement).classList.contains("active")) {
+              highlightTarget[index]?.classList.add("active");
+            } else {
+              highlightTarget[index]?.classList.remove("active");
+            }
+          }
+        });
+      });
+
+      highlightTrigger.forEach((trigger) => {
+        observer.observe(trigger, {
+          attributes: true,
+          attributeFilter: ["class"],
+        });
+      });
+
+      return observer;
+    };
+
+    const highlightObserver = setupHighlightLogic();
+
     // Cleanup on unmount: remove listeners and clear timeouts
     return () => {
       if (tabControllers && tabControllers.length) {
@@ -157,6 +193,9 @@ export function HeroSection() {
             // ignore cleanup errors
           }
         });
+      }
+      if (highlightObserver) {
+        highlightObserver.disconnect();
       }
     };
   }, []);
