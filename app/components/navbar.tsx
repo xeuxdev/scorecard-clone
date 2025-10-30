@@ -1,6 +1,58 @@
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
 export function Navbar() {
+  const navFixedRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const navFixed = navFixedRef.current;
+    const nav = navRef.current;
+
+    if (!navFixed || !nav) return;
+
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Nav Change State - scroll trigger to add/remove is-scrolled class
+    const scrollTrigger = gsap.timeline({
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "+=80",
+        onEnterBack: () => {
+          nav.classList.remove("is-scrolled");
+        },
+        onLeave: () => {
+          nav.classList.add("is-scrolled");
+        },
+      },
+    });
+
+    // Nav Button Change State
+    const handleScroll = () => {
+      if (window.innerWidth < 992) return;
+      const navButtons = nav.querySelector(".nav_menu-buttons");
+      if (window.scrollY > 80) {
+        nav.classList.add("scrolled");
+        navButtons?.classList.add("show");
+      } else {
+        nav.classList.remove("scrolled");
+        navButtons?.classList.remove("show");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      scrollTrigger.kill();
+    };
+  }, []);
+
   return (
-    <div className="nav_fixed">
+    <div className="nav_fixed" ref={navFixedRef}>
       <div
         data-animation="default"
         data-collapse="medium"
@@ -9,6 +61,7 @@ export function Navbar() {
         data-easing2="ease"
         role="banner"
         className="nav w-nav"
+        ref={navRef}
       >
         <div className="padding-global">
           <div className="container-xlarge">

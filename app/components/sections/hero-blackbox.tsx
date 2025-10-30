@@ -1,4 +1,39 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 export default function HomeBlackBox() {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const parallaxElement = parallaxRef.current;
+
+    if (!parallaxElement) return;
+
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Create parallax animation
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: parallaxElement,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+      })
+      .from(parallaxElement, { yPercent: -20, ease: "none" });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (trigger.trigger === parallaxElement) {
+          trigger.kill();
+        }
+      });
+    };
+  }, []);
+
   return (
     <section className="section_home-blackbox">
       <div className="padding-global">
@@ -25,6 +60,7 @@ export default function HomeBlackBox() {
               aria-hidden="true"
               parallax-image=""
               className="home-blackbox_background-video w-embed"
+              ref={parallaxRef}
             >
               <style>
                 {` .home-blackbox_background-video video {
