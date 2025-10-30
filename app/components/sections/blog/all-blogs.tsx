@@ -86,24 +86,26 @@ export function AllBlogs() {
                         AI Tools
                       </span>
                     </label>
+
                     <label className="blog-filter_radio w-radio">
                       <div className="w-form-formradioinput w-form-formradioinput--inputType-custom blog-filter_radio_radio w-radio-input"></div>
                       <input
-                        fs-list-value="LLM Evaluation"
+                        fs-list-value="Engineering"
                         fs-list-field="category"
                         name="filter"
                         data-name="filter"
                         type="radio"
-                        id="LLM-Evaluation"
+                        id="Engineering"
                         style={{ opacity: 0, position: "absolute", zIndex: -1 }}
-                        checked={selectedCategory === "LLM Evaluation"}
-                        onChange={() => setSelectedCategory("LLM Evaluation")}
-                        value="LLM Evaluation"
+                        checked={selectedCategory === "Engineering"}
+                        onChange={() => setSelectedCategory("Engineering")}
+                        value="Engineering"
                       />
                       <span className="blog-filter_radio_text w-form-label">
-                        LLM Evaluation
+                        Engineering
                       </span>
                     </label>
+
                     <label className="blog-filter_radio w-radio">
                       <div className="w-form-formradioinput w-form-formradioinput--inputType-custom blog-filter_radio_radio w-radio-input"></div>
                       <input
@@ -120,24 +122,6 @@ export function AllBlogs() {
                       />
                       <span className="blog-filter_radio_text w-form-label">
                         News
-                      </span>
-                    </label>
-                    <label className="blog-filter_radio w-radio">
-                      <div className="w-form-formradioinput w-form-formradioinput--inputType-custom blog-filter_radio_radio w-radio-input"></div>
-                      <input
-                        fs-list-value="Workflows"
-                        fs-list-field="category"
-                        name="filter"
-                        data-name="filter"
-                        type="radio"
-                        id="Workflows"
-                        style={{ opacity: 0, position: "absolute", zIndex: -1 }}
-                        checked={selectedCategory === "Workflows"}
-                        onChange={() => setSelectedCategory("Workflows")}
-                        value="Workflows"
-                      />
-                      <span className="blog-filter_radio_text w-form-label">
-                        Workflows
                       </span>
                     </label>
                   </div>
