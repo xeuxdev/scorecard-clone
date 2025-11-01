@@ -159,12 +159,7 @@ export default function PrivacyPolicyPage() {
                     <p>
                       For any questions or comments about this policy, please
                       contact us at{" "}
-                      <a
-                        href="mailto:contact@getlambda.ai?subject=Contact%20Lambda"
-                        data-wf-native-id-path="f240dcc8-4d41-450c-975d-2264abaa8e21"
-                        data-wf-ao-click-engagement-tracking="true"
-                        data-wf-element-id="f240dcc8-4d41-450c-975d-2264abaa8e21"
-                      >
+                      <a href="mailto:contact@getlambda.ai?subject=Contact%20Lambda">
                         team@lambda.io
                       </a>
                       .
