@@ -20,7 +20,7 @@ export function BlogCard({
       <div className="blog-card">
         <a
           href={`/blog/${post.url}`}
-          className="blog-card_thumb w-inline-block"
+          className="blog-card_thumb w-inline-block min-h-60! max-h-60!"
         >
           <img
             src={post.image}
