@@ -2,8 +2,7 @@ export const blogPosts = [
   {
     id: 1,
     url: "the-role-of-ai-in-optimizing-lambdas-network",
-    image:
-      "https://cdn.prod.website-files.com/682dd348fd1fba47863dde07/68792d8f5bac1c236f39216f_GwExQGtbEAAF7zL.jpeg",
+    image: "/blog/role-of-ai.webp",
     title: "The Role of AI in Optimizing Lambda's Network",
     date: "July 17, 2025",
     readTime: 0,
@@ -185,8 +184,7 @@ Builders get a system that adjusts to them, instead of forcing them to tune infr
   {
     id: 2,
     url: "the-engineering-principles-behind-lambda-high-performance",
-    image:
-      "https://cdn.prod.website-files.com/682dd348fd1fba47863dde07/685d7ad8a5e14b9a8fdbeabb_Screenshot%202025-06-26%20at%2009.52.33.png",
+    image: "/blog/engineering-principles-behind-lambda-high-performance.webp",
     title: "The Engineering Principles Behind Lambda's High Performance",
     date: "June 30, 2025",
     readTime: 3,
@@ -590,8 +588,7 @@ Keep code light, keep logic clear, and Lambda handles the rest. That is the hear
   {
     id: 3,
     url: "lambda-vs-traditional-cloud-which-is-better-for-developers",
-    image:
-      "https://cdn.prod.website-files.com/682dd348fd1fba47863dde07/6838a44e918cafc58c5093c3_Screenshot%202025-05-29%20at%2011.15.37.png",
+    image: "/blog/lambda-vs-traditional.webp",
     title: "Lambda vs Traditional Cloud: Which Is Better for Developers?",
     date: "May 30, 2025",
     readTime: 3,
@@ -888,7 +885,7 @@ Both serve real needs. The key point is clear: Lambda gives a path to build syst
     id: 4,
     url: "how-lambdas-node-architecture-enables-true-parallel-processing",
     image:
-      "https://cdn.prod.website-files.com/682dd348fd1fba47863dde07/682dd6078b4ba393c82c8846_cj94UnNDakwz513rpkS0BFd3Y4.png",
+      "/blog/how-lambdas-node-architecture-enables-true-parallel-processing.webp",
     title: "How Lambda’s Node Architecture Enables True Parallel Processing",
     date: "February 25, 2025",
     readTime: 3,
@@ -1121,8 +1118,7 @@ The outcome is simple. Lambda does not run a queue. It runs a distributed privac
   {
     id: 5,
     url: "5-ways-startups-can-benefit-from-building-on-lambda",
-    image:
-      "https://cdn.prod.website-files.com/682dd348fd1fba47863dde07/682dd6069edf86fdae5ba4ef_uKCvET5n9Ykp5cGF6untINP7Etk.png",
+    image: "/blog/5-ways-startup-can-benefit-from-building-on-lambda.webp",
     title: "5 Ways Startups Can Benefit from Building on Lambda",
     date: "November 25, 2024",
     readTime: 3,
