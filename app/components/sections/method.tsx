@@ -1,4 +1,29 @@
+import Lottie from "lottie-react";
+import { useRef, useState, useEffect } from "react";
+
 export function MethodSection() {
+  const traditionalLottieRef = useRef(null);
+  const scorecardLottieRef = useRef(null);
+  const [traditionalWorkflowAnimation, setTraditionalWorkflowAnimation] =
+    useState(null);
+  const [scorecardWorkflowAnimation, setScorecardWorkflowAnimation] =
+    useState(null);
+
+  useEffect(() => {
+    fetch("/Traditional_Workflow_Lottie_opt.json")
+      .then((res) => res.json())
+      .then((data) => setTraditionalWorkflowAnimation(data))
+      .catch((err) =>
+        console.error("Error loading traditional workflow animation:", err)
+      );
+
+    fetch("/Scorcard_Workflow_Lottie.json")
+      .then((res) => res.json())
+      .then((data) => setScorecardWorkflowAnimation(data))
+      .catch((err) =>
+        console.error("Error loading scorecard workflow animation:", err)
+      );
+  }, []);
   return (
     <section className="section_home-method">
       <div className="padding-global padding-section-xsmall">
@@ -52,21 +77,17 @@ export function MethodSection() {
                       </div>
                     </div>
                     <div className="scorecard-method_lottie-wrap">
-                      <div
-                        aria-hidden="true"
-                        data-is-ix2-target="1"
-                        className="scorecard-method_lottie"
-                        data-w-id="28d081be-8735-b0a6-bc45-04ab3bc9af35"
-                        data-animation-type="lottie"
-                        data-src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/6812603f34e34d5180a7c5f3_Traditional%20Workflow_Lottie_opt.json"
-                        data-loop="0"
-                        data-direction="1"
-                        data-autoplay="0"
-                        data-renderer="svg"
-                        data-default-duration="0"
-                        data-duration="20.033333333333335"
-                        data-ix2-initial-state="0"
-                      ></div>
+                      <div className="scorecard-method_lottie">
+                        {traditionalWorkflowAnimation && (
+                          <Lottie
+                            lottieRef={traditionalLottieRef}
+                            animationData={traditionalWorkflowAnimation}
+                            loop={true}
+                            autoplay={true}
+                            style={{ width: "100%", height: "100%" }}
+                          />
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -78,21 +99,17 @@ export function MethodSection() {
                       </div>
                     </div>
                     <div className="scorecard-method_lottie-wrap">
-                      <div
-                        aria-hidden="true"
-                        data-is-ix2-target="1"
-                        className="scorecard-method_lottie"
-                        data-w-id="23991d2f-589c-c818-501e-ce009e76f420"
-                        data-animation-type="lottie"
-                        data-src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/68125fda6db76854025e5b1b_Scorcard%20Workflow_Lottie.json"
-                        data-loop="0"
-                        data-direction="1"
-                        data-autoplay="0"
-                        data-renderer="svg"
-                        data-default-duration="0"
-                        data-duration="9.78"
-                        data-ix2-initial-state="0"
-                      ></div>
+                      <div className="scorecard-method_lottie">
+                        {scorecardWorkflowAnimation && (
+                          <Lottie
+                            lottieRef={scorecardLottieRef}
+                            animationData={scorecardWorkflowAnimation}
+                            loop={true}
+                            autoplay={true}
+                            style={{ width: "100%", height: "100%" }}
+                          />
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
