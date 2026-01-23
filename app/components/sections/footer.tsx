@@ -1,8 +1,66 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 export function Footer() {
+  const footerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const footerElement = footerRef.current;
+
+    if (!footerElement) return;
+
+    const contentBlocks = footerElement.querySelectorAll(
+      ".footer_main-content-block",
+    );
+    const secondaryContent = footerElement.querySelectorAll(
+      ".footer_secondary-content",
+    );
+    const copyrightText = footerElement.querySelector(
+      ".footer_text.text-size-xsmall",
+    );
+    const animatedElements = new Set();
+
+    // Intersection Observer for independent animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+            animatedElements.add(entry.target);
+
+            gsap.fromTo(
+              entry.target,
+              {
+                opacity: 0,
+                y: 40,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power3.out",
+              },
+            );
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+        rootMargin: "0px",
+      },
+    );
+
+    // Observe elements independently
+    contentBlocks.forEach((el) => observer.observe(el));
+    secondaryContent.forEach((el) => observer.observe(el));
+    if (copyrightText) observer.observe(copyrightText);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <footer className="footer">
+    <footer className="footer" ref={footerRef}>
       <div className="padding-global">
         <div className="container-xlarge">
           <div className="footer_wrapper">
@@ -10,7 +68,7 @@ export function Footer() {
               id="w-node-_946da7e2-0374-1887-bdc2-62df8659be8d-8659be89"
               className="footer_main-content"
             >
-              <div className="footer_main-content-block">
+              <div className="footer_main-content-block" style={{ opacity: 0 }}>
                 <a
                   aria-label="Go to Home page"
                   href="/"
@@ -25,7 +83,7 @@ export function Footer() {
                   optimization.
                 </p>
               </div>
-              <div className="footer_main-content-block">
+              <div className="footer_main-content-block" style={{ opacity: 0 }}>
                 <div id="wf-newsletter-form" className="form_block w-form">
                   <form
                     id="wf-form-Footer-Form"
@@ -201,7 +259,7 @@ export function Footer() {
                 </div>
               </div>
             </div>
-            <div className="footer_secondary-content">
+            <div className="footer_secondary-content" style={{ opacity: 0 }}>
               <div className="footer_git-link-wrapper">
                 <a
                   aria-label="Visit our Github"
@@ -213,7 +271,7 @@ export function Footer() {
                 </a>
               </div>
             </div>
-            <div className="footer_secondary-content">
+            <div className="footer_secondary-content" style={{ opacity: 0 }}>
               <a
                 aria-label="Go to our Terms of Use"
                 href="/terms-of-service"

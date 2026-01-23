@@ -125,15 +125,15 @@ export function Navbar() {
                             aria-expanded="false"
                             onClick={(e) => {
                               e.currentTarget.nextElementSibling?.classList.toggle(
-                                "nav_dropdown-open"
+                                "nav_dropdown-open",
                               );
                               e.currentTarget.setAttribute(
                                 "aria-expanded",
                                 e.currentTarget.getAttribute(
-                                  "aria-expanded"
+                                  "aria-expanded",
                                 ) === "false"
                                   ? "true"
-                                  : "false"
+                                  : "false",
                               );
                             }}
                           >
@@ -226,6 +226,7 @@ export function Navbar() {
                           href="https://scorecard-docs.vercel.app"
                           aria-label="login"
                           role="button"
+                          target="_blank"
                         >
                           <span className="button-primary_bg"></span>
                           <span

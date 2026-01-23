@@ -1,6 +1,60 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
 export function SolutionSection() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const sectionElement = sectionRef.current;
+
+    if (!sectionElement) return;
+
+    const headingElements = sectionElement.querySelectorAll(
+      ".section-heading-main_content",
+    );
+    const cardElements = sectionElement.querySelectorAll(".info-card");
+    const animatedElements = new Set();
+
+    // Intersection Observer for independent animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+            animatedElements.add(entry.target);
+
+            gsap.fromTo(
+              entry.target,
+              {
+                opacity: 0,
+                y: 40,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power3.out",
+              },
+            );
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+        rootMargin: "0px",
+      },
+    );
+
+    // Observe all heading and card elements independently
+    headingElements.forEach((el) => observer.observe(el));
+    cardElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="section_home-solution">
+    <section className="section_home-solution" ref={sectionRef}>
       <div className="padding-global padding-section-xsmall">
         <div className="container-xlarge">
           <div className="bento-grid">
@@ -14,6 +68,7 @@ export function SolutionSection() {
                   <div
                     id="w-node-_6723d3a1-a9c6-44b5-3b01-c86b0eb89818-0fca1c98"
                     className="section-heading-main_content text-wrap-balance"
+                    style={{ opacity: 0 }}
                   >
                     <div className="section-heading-main_eyebrow">
                       <div className="section-heading-main_eyebrow_number">
@@ -30,6 +85,7 @@ export function SolutionSection() {
                   <div
                     id="w-node-debbe1d1-e039-bff9-e1d5-863054e56659-0fca1c98"
                     className="section-heading-main_content text-wrap-balance"
+                    style={{ opacity: 0 }}
                   >
                     <p className="section-heading-main_text text-size-medium">
                       Instead of monopolies and centralized entities controlling
@@ -47,9 +103,9 @@ export function SolutionSection() {
               className="bento-grid_content"
             >
               <div className="bento-card">
-                <div className="info-card">
+                <div className="info-card" style={{ opacity: 0 }}>
                   <div className="info-card_content">
-                    <h3 className="info-card_text subtitle-size-1">
+                    <h3 className="info-card_text subtitle-size-1 text-[#ff6e3e]">
                       Run a Node
                     </h3>
                     <p className="info-card_text text-size-xsmall">
@@ -75,9 +131,9 @@ export function SolutionSection() {
               className="bento-grid_content"
             >
               <div className="bento-card">
-                <div className="info-card">
+                <div className="info-card" style={{ opacity: 0 }}>
                   <div className="info-card_content">
-                    <h3 className="info-card_text subtitle-size-1">
+                    <h3 className="info-card_text subtitle-size-1 text-[#ff6e3e]">
                       Build Applications
                     </h3>
                     <p className="info-card_text text-size-xsmall">
@@ -103,9 +159,9 @@ export function SolutionSection() {
               className="bento-grid_content"
             >
               <div className="bento-card">
-                <div className="info-card">
+                <div className="info-card" style={{ opacity: 0 }}>
                   <div className="info-card_content">
-                    <h3 className="info-card_text subtitle-size-1">
+                    <h3 className="info-card_text subtitle-size-1 text-[#ff6e3e]">
                       Stake and Secure
                     </h3>
                     <p className="info-card_text text-size-xsmall">
@@ -131,9 +187,9 @@ export function SolutionSection() {
               className="bento-grid_content"
             >
               <div className="bento-card">
-                <div className="info-card">
+                <div className="info-card" style={{ opacity: 0 }}>
                   <div className="info-card_content">
-                    <h3 className="info-card_text subtitle-size-1">
+                    <h3 className="info-card_text subtitle-size-1 text-[#ff6e3e]">
                       Engage and Expand
                     </h3>
                     <p className="info-card_text text-size-xsmall">
