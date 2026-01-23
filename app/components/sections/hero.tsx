@@ -4,21 +4,78 @@ import "./styles/hero.css";
 
 export function HeroSection() {
   useEffect(() => {
+    // Entry animations
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    tl.fromTo(
+      ".section-heading-main_text",
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+      },
+    )
+      .fromTo(
+        ".home-hero_button-wrap",
+        {
+          opacity: 0,
+          y: 20,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+        },
+        "-=0.4",
+      )
+      .fromTo(
+        ".tab-content__item",
+        {
+          opacity: 0,
+          x: -20,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.5,
+          stagger: 0.1,
+        },
+        "-=0.3",
+      )
+      .fromTo(
+        ".tab-visual__wrap",
+        {
+          opacity: 0,
+          scale: 0.95,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.7,
+        },
+        "-=0.4",
+      );
+
     function initTabSystem() {
       const wrappers = document.querySelectorAll<HTMLElement>(
-        '[data-tabs="wrapper"]'
+        '[data-tabs="wrapper"]',
       );
       const controllers: any[] = [];
 
       wrappers.forEach((wrapper) => {
         const contentItems = wrapper.querySelectorAll<HTMLElement>(
-          '[data-tabs="content-item"]'
+          '[data-tabs="content-item"]',
         );
         const visualItems = wrapper.querySelectorAll<HTMLElement>(
-          '[data-tabs="visual-item"]'
+          '[data-tabs="visual-item"]',
         );
         const highlightTargets = wrapper.querySelectorAll<HTMLElement>(
-          "[data-highlight-target]"
+          "[data-highlight-target]",
         );
 
         const autoplay = wrapper.dataset.tabsAutoplay === "true";
@@ -84,7 +141,7 @@ export function HeroSection() {
                 autoAlpha: 0,
                 yPercent: 3,
               },
-              0
+              0,
             );
           }
 
@@ -98,7 +155,7 @@ export function HeroSection() {
               autoAlpha: 1,
               yPercent: 0,
             },
-            0.3
+            0.3,
           );
         }
 
@@ -132,7 +189,7 @@ export function HeroSection() {
           itemHandlers,
           clear: () => {
             itemHandlers.forEach(({ item, handler }) =>
-              item.removeEventListener("click", handler)
+              item.removeEventListener("click", handler),
             );
             if (autoplayTimeout) {
               clearTimeout(autoplayTimeout);
@@ -160,7 +217,7 @@ export function HeroSection() {
           ) {
             const target = mutation.target as Element;
             const index = Array.from(highlightTrigger).indexOf(
-              target as Element
+              target as Element,
             );
             if ((target as HTMLElement).classList.contains("active")) {
               highlightTarget[index]?.classList.add("active");
@@ -210,7 +267,10 @@ export function HeroSection() {
                 id="w-node-_94e4e67f-5b8f-e330-d284-e22c77721aaa-0fca1c98"
                 className="section-heading-main_content is-home-hero"
               >
-                <h1 className="section-heading-main_text heading-style-h1">
+                <h1
+                  className="section-heading-main_text heading-style-h1"
+                  style={{ opacity: 0 }}
+                >
                   <span className="data-highlight active">Encrypt,</span>{" "}
                   <span className="data-highlight">Compute</span>, and{" "}
                   <span className="data-highlight">Deploy </span> today with
@@ -236,12 +296,13 @@ export function HeroSection() {
                     </span>
                   </a>
                 </div> */}
-                <div className="home-hero_button-wrap">
+                <div className="home-hero_button-wrap" style={{ opacity: 0 }}>
                   <a
                     className="button-primary w-inline-block"
                     href="https://scorecard-docs.vercel.app"
                     aria-label="read our docs"
                     role="button"
+                    target="_blank"
                   >
                     <span className="button-primary_bg"></span>
                     <span
@@ -349,6 +410,7 @@ export function HeroSection() {
                       role="tab"
                       href="#"
                       className="tab-content__item w-inline-block"
+                      style={{ opacity: 0 }}
                     >
                       <div className="tab-content__item-main">
                         <h2 className="content-item__heading">ai</h2>
@@ -360,6 +422,7 @@ export function HeroSection() {
                       role="tab"
                       href="#"
                       className="tab-content__item w-inline-block"
+                      style={{ opacity: 0 }}
                     >
                       <div className="tab-content__item-main">
                         <h2 className="content-item__heading">blockchain</h2>
@@ -371,6 +434,7 @@ export function HeroSection() {
                       role="tab"
                       href="#"
                       className="tab-content__item w-inline-block"
+                      style={{ opacity: 0 }}
                     >
                       <div className="tab-content__item-main">
                         <h2 className="content-item__heading">DePIN</h2>
@@ -383,6 +447,7 @@ export function HeroSection() {
                     aria-live="polite"
                     role="region"
                     className="tab-visual__wrap"
+                    style={{ opacity: 0 }}
                   >
                     <div
                       id="tab1"
