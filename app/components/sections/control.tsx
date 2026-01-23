@@ -1,12 +1,66 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 export function ControlSection() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const sectionElement = sectionRef.current;
+
+    if (!sectionElement) return;
+
+    const headingElement = sectionElement.querySelector(
+      ".take-control_text:first-of-type",
+    );
+    const copyElement = sectionElement.querySelector(".take-control_copy");
+    const videoElement = sectionElement.querySelector(".background-video");
+    const animatedElements = new Set();
+
+    // Intersection Observer for independent animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+            animatedElements.add(entry.target);
+
+            gsap.fromTo(
+              entry.target,
+              {
+                opacity: 0,
+                y: 40,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power3.out",
+              },
+            );
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+        rootMargin: "0px",
+      },
+    );
+
+    // Observe elements independently
+    if (headingElement) observer.observe(headingElement);
+    if (copyElement) observer.observe(copyElement);
+    if (videoElement) observer.observe(videoElement);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="section_take-control">
+    <section className="section_take-control" ref={sectionRef}>
       <div className="padding-global">
         <div className="container-large">
           <div className="take-control_wrapper">
-            <div className="background-video">
+            <div className="background-video" style={{ opacity: 0 }}>
               <div
                 aria-hidden="true"
                 className="background-video-embed w-embed overflow-hidden"
@@ -35,10 +89,10 @@ export function ControlSection() {
                 id="w-node-_6b9235dc-8ddc-5528-a09f-0b5ce2da4318-e2da4312"
                 className="take-control_content max-w-[55ch]!"
               >
-                <h2 className="take-control_text">
+                <h2 className="take-control_text" style={{ opacity: 0 }}>
                   Solve Your <br /> Privacy Concerns
                 </h2>
-                <div className="take-control_copy">
+                <div className="take-control_copy" style={{ opacity: 0 }}>
                   <p className="take-control_text subtitle-size-2">
                     Join forward-thinking teams using Lambda to upgrade the way
                     they build, test, and improve ENCRYPTED APPLICATIONS.
