@@ -299,7 +299,7 @@ export function HeroSection() {
                 <div className="home-hero_button-wrap" style={{ opacity: 0 }}>
                   <a
                     className="button-primary w-inline-block"
-                    href="https://scorecard-docs.vercel.app"
+                    href="https://lambda-docs-4eym.vercel.app/"
                     aria-label="read our docs"
                     role="button"
                     target="_blank"

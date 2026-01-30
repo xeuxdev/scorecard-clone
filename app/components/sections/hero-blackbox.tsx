@@ -134,7 +134,7 @@ export default function HomeBlackBox() {
                 muted
                 autoPlay
                 playsInline
-                src="https://scorecard-temp.netlify.app/video/black-box-main-2.mp4"
+                src="/black-box-main-2.mp4"
               />
             </div>
           </div>

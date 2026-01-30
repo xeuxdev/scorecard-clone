@@ -78,7 +78,7 @@ export function ControlSection() {
                   muted
                   autoPlay
                   playsInline
-                  src="https://xlwx5ka7x96yuoy8.public.blob.vercel-storage.com/Pills%20spin-lojnixFCHKwz2dTXay4XcyjPelml6M.mp4"
+                  src="/Pills spin.mp4"
                   className="overflow-hidden"
                 />
               </div>
@@ -99,7 +99,7 @@ export function ControlSection() {
                   </p>
                   <a
                     className="button-primary w-inline-block"
-                    href="/docs"
+                    href="/https://lambda-docs-4eym.vercel.app/"
                     target="_blank"
                     aria-label="Go to Book a Demo page"
                     role="button"
