@@ -99,7 +99,7 @@ export function ControlSection() {
                   </p>
                   <a
                     className="button-primary w-inline-block"
-                    href="/https://lambda-docs-4eym.vercel.app/"
+                    href="https://docs.lambdaprivacy.org/"
                     target="_blank"
                     aria-label="Go to Book a Demo page"
                     role="button"

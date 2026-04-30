@@ -5093,22 +5093,22 @@ figcaption {
 }
 
 .home-problem_card {
-  grid-column-gap: 14rem;
-  grid-row-gap: 1.5rem;
+  row-gap: 1.5rem;
   text-wrap: balance;
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
-  height: auto;
+  height: 100%;
   display: flex;
 }
 
 .home-problem_card_content {
-  grid-column-gap: 3.25rem;
-  grid-row-gap: 3.25rem;
+  column-gap: 3.25rem;
+  row-gap: 1rem;
+  flex: 1;
   justify-content: space-between;
   align-items: flex-end;
-  height: 12rem;
+  height: auto;
   display: flex;
 }
 
@@ -9089,9 +9089,7 @@ figcaption {
   }
 
   .home-problem_card {
-    grid-column-gap: 8rem;
-    grid-row-gap: 8rem;
-    height: auto;
+    row-gap: 1.5rem;
   }
 
   .home-problem_card_content {
@@ -10447,8 +10445,7 @@ figcaption {
   }
 
   .home-problem_card {
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
+    row-gap: 1.5rem;
   }
 
   .test-cta_content {

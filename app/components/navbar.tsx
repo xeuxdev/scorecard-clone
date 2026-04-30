@@ -110,7 +110,7 @@ export function Navbar() {
                       <li className="nav_menu-li">
                         <a
                           aria-label="Go to Resources page"
-                          href="https://lambda-docs-4eym.vercel.app/"
+                          href="https://docs.lambdaprivacy.org/"
                           target="_blank"
                           className="nav_menu-link"
                         >
@@ -223,7 +223,7 @@ export function Navbar() {
                       <div className="nav_menu-button-wrapper">
                         <a
                           className="button-primary w-inline-block"
-                          href="https://lambda-docs-4eym.vercel.app/"
+                          href="https://app.lambdaprivacy.org/"
                           aria-label="login"
                           role="button"
                           target="_blank"
