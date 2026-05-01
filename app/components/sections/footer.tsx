@@ -269,6 +269,22 @@ export function Footer() {
                 >
                   GITHUB
                 </a>
+                <a
+                  aria-label="Visit our Github"
+                  href="https://t.me/lambdaprivacy"
+                  target="_blank"
+                  className="footer_primary-link"
+                >
+                  TELEGRAM
+                </a>
+                <a
+                  aria-label="Visit our Github"
+                  href="https://x.com/Lambdaprivacy"
+                  target="_blank"
+                  className="footer_primary-link"
+                >
+                  X
+                </a>
               </div>
             </div>
             <div className="footer_secondary-content" style={{ opacity: 0 }}>

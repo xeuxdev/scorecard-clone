@@ -259,7 +259,9 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="#"
+                                href="https://forms.gle/AJLeJu3JYpTcSKD56"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div
@@ -274,22 +276,6 @@ export default function CareersPage() {
                                   >
                                     <span className="button-primary_text">
                                       Apply Now
-                                    </span>
-                                    <span className="button-primary_icon-wrap">
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <div className="button-primary_dot"></div>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
                                     </span>
                                   </span>
                                 </div>
@@ -339,7 +325,9 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="#"
+                                href="https://forms.gle/AJLeJu3JYpTcSKD56"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div
@@ -354,22 +342,6 @@ export default function CareersPage() {
                                   >
                                     <span className="button-primary_text">
                                       Apply Now
-                                    </span>
-                                    <span className="button-primary_icon-wrap">
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <div className="button-primary_dot"></div>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
                                     </span>
                                   </span>
                                 </div>
@@ -419,7 +391,9 @@ export default function CareersPage() {
                                 </div>
                               </div>
                               <a
-                                href="#"
+                                href="https://forms.gle/AJLeJu3JYpTcSKD56"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="open-role_card-link w-inline-block"
                               >
                                 <div
@@ -434,22 +408,6 @@ export default function CareersPage() {
                                   >
                                     <span className="button-primary_text">
                                       Apply Now
-                                    </span>
-                                    <span className="button-primary_icon-wrap">
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
-                                      <span className="button-primary_icon">
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                        <div className="button-primary_dot"></div>
-                                        <span className="button-primary_dot"></span>
-                                        <span className="button-primary_dot"></span>
-                                      </span>
                                     </span>
                                   </span>
                                 </div>
