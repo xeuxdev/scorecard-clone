@@ -263,8 +263,8 @@ export default function TermsOfServicePage() {
                       </p>
                       <p>
                         10.4 Notices shall be sent to{" "}
-                        <Link to="mailto:legal@lambda.builders">
-                          legal@lambda.builders
+                        <Link to="mailto:legal@lambdaprivacy.org">
+                          legal@lambdaprivacy.org
                         </Link>
                         .
                       </p>

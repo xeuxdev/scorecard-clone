@@ -195,7 +195,7 @@ const faqCategories = [
         id: "how-do-i-get-started-with-the-api",
         question: "How do I get started with Lambda's API?",
         answer:
-          "Visit lambda.dev/docs for comprehensive API documentation, interactive endpoints, and code examples for all supported languages. Generate API keys from your account settings and start making authenticated requests. Our API enables full programmatic control over evaluation workflows, test case management, and result retrieval.",
+          "Visit docs.lambdaprivacy.org for comprehensive API documentation, interactive endpoints, and code examples for all supported languages. Generate API keys from your account settings and start making authenticated requests. Our API enables full programmatic control over evaluation workflows, test case management, and result retrieval.",
       },
       {
         id: "is-there-a-python-sdk",
@@ -213,7 +213,7 @@ const faqCategories = [
         id: "where-can-i-get-support",
         question: "What support and resources are available?",
         answer:
-          "Lambda provides comprehensive support: detailed documentation and guides at lambda.dev, community forums for discussions, email support for all plans, priority support for enterprise customers, and dedicated support engineers for critical deployments. We also maintain blog resources covering best practices and case studies.",
+          "Lambda provides comprehensive support: detailed documentation and guides at docs.lambdaprivacy.org, community forums for discussions, email support for all plans, priority support for enterprise customers, and dedicated support engineers for critical deployments. We also maintain blog resources covering best practices and case studies.",
       },
     ],
   },

@@ -63,12 +63,12 @@ export default function PrivacyPolicyPage() {
                       security very seriously. Should you have any queries or
                       concerns, we're here to answer. Reach out to us at{" "}
                       <a
-                        href="mailto:contact@getlambda.ai?subject=Contact%20Lambda"
-                        data-wf-native-id-path="b073e5e4-5544-85a0-b269-8e340a3642fa"
-                        data-wf-ao-click-engagement-tracking="true"
-                        data-wf-element-id="b073e5e4-5544-85a0-b269-8e340a3642fa"
+                        href="mailto:team@lambdaprivacy.org?subject=Contact%20Lambda"
+                        // data-wf-native-id-path="b073e5e4-5544-85a0-b269-8e340a3642fa"
+                        // data-wf-ao-click-engagement-tracking="true"
+                        // data-wf-element-id="b073e5e4-5544-85a0-b269-8e340a3642fa"
                       >
-                        team@lambda.io
+                        team@lambdaprivacy.org
                       </a>{" "}
                       anytime.
                     </p>
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
                     <p>
                       We only collect necessary personal information that you
                       voluntarily provide to us when using our website
-                      getlambda.ai, or when you express an interest in our
+                      lambdaprivacy.org, or when you express an interest in our
                       products and services. Here's a brief overview:
                     </p>
                     <ul role="list" className="list-disc">
@@ -159,8 +159,8 @@ export default function PrivacyPolicyPage() {
                     <p>
                       For any questions or comments about this policy, please
                       contact us at{" "}
-                      <a href="mailto:contact@getlambda.ai?subject=Contact%20Lambda">
-                        team@lambda.io
+                      <a href="mailto:team@lambdaprivacy.org?subject=Contact%20Lambda">
+                        team@lambdaprivacy.org
                       </a>
                       .
                     </p>
