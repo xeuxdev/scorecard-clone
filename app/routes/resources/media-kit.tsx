@@ -12,7 +12,7 @@ const mediaKitItems = [
         title: "Logos without Background",
         description:
           "High quality logos with transparent backgrounds for scalable use.",
-        downloadUrl: "/assets/lambda-logos-bg.zip",
+        downloadUrl: "/assets/logo without BG.png",
         icon: "📁",
       },
       {
@@ -20,15 +20,15 @@ const mediaKitItems = [
         title: "Logos with Background",
         description:
           "High quality logos with backgrounds for use on various media.",
-        downloadUrl: "/assets/lambda-logos.zip",
+        downloadUrl: "/assets/logo-with-bg.zip",
         icon: "🖼️",
       },
       {
         id: "complete-logo-kit",
-        title: "Complete Logo Kit",
+        title: "Complete Media Kit",
         description:
-          "All logo variations, color schemes, and usage guidelines in one package.",
-        downloadUrl: "/assets/lambda-logos-complete.zip",
+          "All logo variations,  color schemes, and usage guidelines in one package.",
+        downloadUrl: "/assets/media-kit.zip",
         icon: "📦",
       },
     ],
@@ -99,14 +99,14 @@ const mediaKitItems = [
 
 export default function MediaKitPage() {
   const [activeCategory, setActiveCategory] = useState<string>(
-    mediaKitItems[0].id
+    mediaKitItems[0].id,
   );
   const [downloadingItem, setDownloadingItem] = useState<string>("");
 
   const handleDownload = async (
     url: string,
     fileName: string,
-    itemId: string
+    itemId: string,
   ) => {
     setDownloadingItem(itemId);
 
@@ -249,7 +249,7 @@ export default function MediaKitPage() {
                                 handleDownload(
                                   item.downloadUrl,
                                   item.title,
-                                  item.id
+                                  item.id,
                                 )
                               }
                               disabled={downloadingItem === item.id}
