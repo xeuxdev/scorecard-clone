@@ -261,7 +261,7 @@ export function Footer() {
             </div>
             <div className="footer_secondary-content" style={{ opacity: 0 }}>
               <div className="footer_git-link-wrapper">
-                <a
+               {/* <a
                   aria-label="Visit our Github"
                   href="https://github.com/lambda-protocol"
                   target="_blank"
@@ -269,6 +269,7 @@ export function Footer() {
                 >
                   GITHUB
                 </a>
+*/}
                 <a
                   aria-label="Visit our Github"
                   href="https://t.me/lambdaprivacy"
