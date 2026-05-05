@@ -22,21 +22,11 @@ export function meta({}: Route.MetaArgs) {
       content:
         "Encrypt everything. Compute anything. Deploy today with Confidential Computing.",
     },
-    {
-      property: "og:image",
-      // content:
-      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
-    },
     { property: "twitter:title", content: "Home | Lambda" },
     {
       property: "twitter:description",
       content:
         "Encrypt everything. Compute anything. Deploy today with Confidential Computing.",
-    },
-    {
-      property: "twitter:image",
-      // content:
-      //   "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680be2472e0c42225eb5c6fb_bb737b32df1d17f3492808c99d78bb0b_scorecard-open-graph.jpg",
     },
     { property: "og:type", content: "website" },
   ];
