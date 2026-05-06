@@ -26,13 +26,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      data-wf-domain="www.scorecard.io"
-      data-wf-page="68012f5feeda4ace0fca1c98"
-      data-wf-site="68012f5eeeda4ace0fca1c46"
-      data-wf-intellimize-customer-id="117556953"
-      lang="en"
-    >
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +55,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </style>
         <link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
         <link href="/webclip.png" rel="apple-touch-icon" />
-        <link href="https://www.scorecard.io" rel="canonical" />
       </head>
       <body>
         {children}

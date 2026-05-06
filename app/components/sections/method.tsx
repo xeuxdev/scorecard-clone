@@ -4,12 +4,11 @@ import gsap from "gsap";
 
 export function MethodSection() {
   const traditionalLottieRef = useRef(null);
-  const scorecardLottieRef = useRef(null);
+  const lambdaLottieRef = useRef(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const [traditionalWorkflowAnimation, setTraditionalWorkflowAnimation] =
     useState(null);
-  const [scorecardWorkflowAnimation, setScorecardWorkflowAnimation] =
-    useState(null);
+  const [lambdaWorkflowAnimation, setlambdaWorkflowAnimation] = useState(null);
 
   useEffect(() => {
     fetch("/Traditional_Workflow_Lottie_opt.json")
@@ -21,9 +20,9 @@ export function MethodSection() {
 
     fetch("/Scorcard_Workflow_Lottie.json")
       .then((res) => res.json())
-      .then((data) => setScorecardWorkflowAnimation(data))
+      .then((data) => setlambdaWorkflowAnimation(data))
       .catch((err) =>
-        console.error("Error loading scorecard workflow animation:", err),
+        console.error("Error loading lambda workflow animation:", err),
       );
   }, []);
 
@@ -35,7 +34,7 @@ export function MethodSection() {
     const headingElements = sectionElement.querySelectorAll(
       ".section-heading-main_content",
     );
-    const methodElements = sectionElement.querySelectorAll(".scorecard-method");
+    const methodElements = sectionElement.querySelectorAll(".lambda-method");
     const animatedElements = new Set();
 
     // Intersection Observer for independent animations
@@ -123,15 +122,15 @@ export function MethodSection() {
               className="bento-grid_content"
             >
               <div className="bento-card is-2rem-gap">
-                <div className="scorecard-method" style={{ opacity: 0 }}>
-                  <div className="scorecard-method_content-wrap">
-                    <div className="scorecard-method_title-wrap">
-                      <div className="scorecard-method_text subtitle-size-2">
+                <div className="lambda-method" style={{ opacity: 0 }}>
+                  <div className="lambda-method_content-wrap">
+                    <div className="lambda-method_title-wrap">
+                      <div className="lambda-method_text subtitle-size-2">
                         Traditional Workflow
                       </div>
                     </div>
-                    <div className="scorecard-method_lottie-wrap">
-                      <div className="scorecard-method_lottie">
+                    <div className="lambda-method_lottie-wrap">
+                      <div className="lambda-method_lottie">
                         {traditionalWorkflowAnimation && (
                           <Lottie
                             lottieRef={traditionalLottieRef}
@@ -145,19 +144,19 @@ export function MethodSection() {
                     </div>
                   </div>
                 </div>
-                <div className="scorecard-method" style={{ opacity: 0 }}>
-                  <div className="scorecard-method_content-wrap">
-                    <div className="scorecard-method_title-wrap">
-                      <div className="scorecard-method_text subtitle-size-2">
+                <div className="lambda-method" style={{ opacity: 0 }}>
+                  <div className="lambda-method_content-wrap">
+                    <div className="lambda-method_title-wrap">
+                      <div className="lambda-method_text subtitle-size-2">
                         LAMBDA Workflow
                       </div>
                     </div>
-                    <div className="scorecard-method_lottie-wrap">
-                      <div className="scorecard-method_lottie">
-                        {scorecardWorkflowAnimation && (
+                    <div className="lambda-method_lottie-wrap">
+                      <div className="lambda-method_lottie">
+                        {lambdaWorkflowAnimation && (
                           <Lottie
-                            lottieRef={scorecardLottieRef}
-                            animationData={scorecardWorkflowAnimation}
+                            lottieRef={lambdaLottieRef}
+                            animationData={lambdaWorkflowAnimation}
                             loop={true}
                             autoplay={true}
                             style={{ width: "100%", height: "100%" }}
