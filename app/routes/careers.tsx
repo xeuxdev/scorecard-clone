@@ -97,7 +97,7 @@ export default function CareersPage() {
                       testing and continuous evaluation. Our platform gives
                       engineering and product teams the evidence and tooling
                       they need to ship reliable LLM-driven features with
-                      confidence — from prototype to production.
+                      confidence from prototype to production.
                     </p>
                   </div>
                 </div>
@@ -114,7 +114,6 @@ export default function CareersPage() {
                   src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffd563b7af470b8482_careers-hero-img-1.avif"
                   loading="lazy"
                   sizes="(max-width: 731px) 100vw, 731px"
-                  srcSet="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffd563b7af470b8482_careers-hero-img-1-p-500.avif 500w, https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffd563b7af470b8482_careers-hero-img-1.avif 731w"
                   alt="Lambda Team"
                   className="career-hero-visuals_img-1"
                 />
@@ -128,7 +127,6 @@ export default function CareersPage() {
                   src="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffebd801e80f7e9a46_careers-hero-img-2.avif"
                   loading="lazy"
                   sizes="(max-width: 698px) 100vw, 698px"
-                  srcSet="https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffebd801e80f7e9a46_careers-hero-img-2-p-500.avif 500w, https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/683745ffebd801e80f7e9a46_careers-hero-img-2.avif 698w"
                   alt="Lambda Team"
                   className="career-hero-visuals_img-1"
                 />
